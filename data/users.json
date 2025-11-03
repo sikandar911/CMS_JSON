@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "admin@blog.com",
+            "display_name": "Blog Administrator",
+            "password": "$2a$10$yplkq4UhXx54tPf1WWULTOAg0zrhJJ6qpMSr91IHB3GzqwH61MhI2",
+            "role": "admin",
+            "created_at": "2025-01-01T00:00:00.000Z"
+        },
+        {
+            "id": 2,
+            "email": "editor@blog.com",
+            "display_name": "Blog Editor",
+            "password": "$2a$10$IfXjnlSr9oqXcb0CAyj.L.We5pG0yavTu05Ic2JKUOZBGaREBAiJG",
+            "role": "editor",
+            "created_at": "2025-01-01T00:00:00.000Z"
+        }
+    ]
+}

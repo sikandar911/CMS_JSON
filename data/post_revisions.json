@@ -1,0 +1,55 @@
+{
+    "post_revisions": [
+        {
+            "id": 1,
+            "post_id": 1,
+            "revision_number": 1,
+            "author_id": 1,
+            "data_snapshot": {
+                "title": "How to Study Abroad in the UK",
+                "excerpt": "Planning to study abroad in the UK? You're making an excellent choice.",
+                "status": "draft",
+                "blocks": [
+                    {
+                        "id": "b1-title-001",
+                        "type": "title",
+                        "content": {
+                            "text": "How to Study Abroad in the UK",
+                            "level": "h1"
+                        }
+                    }
+                ]
+            },
+            "created_at": "2025-09-01T00:00:00.000Z"
+        },
+        {
+            "id": 2,
+            "post_id": 1,
+            "revision_number": 2,
+            "author_id": 1,
+            "data_snapshot": {
+                "title": "How to Study Abroad in the UK",
+                "excerpt": "Planning to study abroad in the UK? You're making an excellent choice. The United Kingdom attracts over 600,000 international students annually.",
+                "status": "published",
+                "blocks": [
+                    {
+                        "id": "b1-title-001",
+                        "type": "title",
+                        "content": {
+                            "text": "How to Study Abroad in the UK",
+                            "level": "h1"
+                        }
+                    },
+                    {
+                        "id": "b1-para-001",
+                        "type": "paragraph",
+                        "content": {
+                            "html": "<p>Planning to study abroad in the UK? You're making an excellent choice. The United Kingdom attracts over 600,000 international students annually, making it the second most popular study destination globally.</p>"
+                        }
+                    }
+                ]
+            },
+            "created_at": "2025-09-03T00:00:00.000Z"
+        }
+    ]
+}
