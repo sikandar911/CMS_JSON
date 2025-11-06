@@ -44,27 +44,61 @@ export class JsonDb {
 
   /**
    * Read JSON file with error handling
-   * Priority: read committed `data/` directory first (read-only), then fallback to /tmp if present
+   * Priority on Vercel runtime: read /tmp first (has latest writes), then fallback to committed data
+   * Priority in other environments: read committed data first
    */
   read<T>(filename: string): T {
     const localPath = path.join(this.localDataDir, filename)
     const tmpPath = path.join(this.tmpDataDir, filename)
+    const isVercelRuntime = process.env.VERCEL === '1' && !!process.env.VERCEL_URL
 
     try {
-      // Prefer committed data in repository (available during build and in read-only runtime)
-      if (fs.existsSync(localPath)) {
-        const data = fs.readFileSync(localPath, 'utf-8')
-        const parsed = JSON.parse(data)
-        console.log('[JsonDb.read] Read from local data dir:', localPath)
-        return parsed
-      }
+      // On Vercel runtime, prioritize /tmp (where writes go) over committed data
+      if (isVercelRuntime) {
+        // Check /tmp first (latest writes)
+        if (fs.existsSync(tmpPath)) {
+          const data = fs.readFileSync(tmpPath, 'utf-8')
+          const parsed = JSON.parse(data)
+          console.log('[JsonDb.read] Read from tmp data dir (Vercel):', tmpPath)
+          return parsed
+        }
 
-      // Fallback to /tmp (may exist for transient writes)
-      if (fs.existsSync(tmpPath)) {
-        const data = fs.readFileSync(tmpPath, 'utf-8')
-        const parsed = JSON.parse(data)
-        console.log('[JsonDb.read] Read from tmp data dir:', tmpPath)
-        return parsed
+        // Fallback to committed data (initial state on cold-start)
+        if (fs.existsSync(localPath)) {
+          const data = fs.readFileSync(localPath, 'utf-8')
+          const parsed = JSON.parse(data)
+          console.log('[JsonDb.read] Read from local data dir (Vercel fallback):', localPath)
+          
+          // Copy to /tmp so subsequent writes can modify it
+          try {
+            const dir = path.dirname(tmpPath)
+            if (!fs.existsSync(dir)) {
+              fs.mkdirSync(dir, { recursive: true })
+            }
+            fs.writeFileSync(tmpPath, data, 'utf-8')
+            console.log('[JsonDb.read] Copied to tmp for future writes:', tmpPath)
+          } catch (copyError) {
+            console.warn('[JsonDb.read] Failed to copy to tmp (non-critical):', copyError)
+          }
+          
+          return parsed
+        }
+      } else {
+        // Local/build environment: prefer committed data
+        if (fs.existsSync(localPath)) {
+          const data = fs.readFileSync(localPath, 'utf-8')
+          const parsed = JSON.parse(data)
+          console.log('[JsonDb.read] Read from local data dir:', localPath)
+          return parsed
+        }
+
+        // Fallback to /tmp (unlikely in local dev)
+        if (fs.existsSync(tmpPath)) {
+          const data = fs.readFileSync(tmpPath, 'utf-8')
+          const parsed = JSON.parse(data)
+          console.log('[JsonDb.read] Read from tmp data dir (local fallback):', tmpPath)
+          return parsed
+        }
       }
 
       // No file found
