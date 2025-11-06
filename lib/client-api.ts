@@ -10,6 +10,8 @@ class ClientApiError extends Error {
 
 async function apiRequest(endpoint: string, options: RequestInit = {}) {
   const token = localStorage.getItem('blog_auth_token')
+  console.log(`[apiRequest] ${options.method || 'GET'} ${endpoint} - Token present:`, !!token, token ? `(length=${token.length})` : '')
+  
   // Safely merge headers (options.headers may be undefined)
   const defaultHeaders: Record<string, string> = {
     'Content-Type': 'application/json',
@@ -17,6 +19,9 @@ async function apiRequest(endpoint: string, options: RequestInit = {}) {
 
   if (token) {
     defaultHeaders['Authorization'] = `Bearer ${token}`
+    console.log(`[apiRequest] Authorization header set`)
+  } else {
+    console.log(`[apiRequest] WARNING: No token in localStorage for ${endpoint}`)
   }
 
   const mergedHeaders = {
@@ -27,9 +32,12 @@ async function apiRequest(endpoint: string, options: RequestInit = {}) {
   const config: RequestInit = {
     ...options,
     headers: mergedHeaders,
+    // ensure cookies are sent for same-origin requests (so server can read blog_auth_token cookie)
+    credentials: 'same-origin',
   }
 
   const response = await fetch(`${API_BASE}${endpoint}`, config)
+  console.log(`[apiRequest] Response status:`, response.status)
   
   if (!response.ok) {
     const error = await response.json().catch(() => ({ error: 'Network error' }))
@@ -112,6 +120,13 @@ export const clientApi = {
       localStorage.removeItem('blog_auth_token')
       // Also clear any old token keys
       localStorage.removeItem('admin_token')
+      try {
+        if (typeof document !== 'undefined') {
+          document.cookie = 'blog_auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT'
+        }
+      } catch (err) {
+        // ignore
+      }
     },
 
     isAuthenticated: () => {
@@ -126,6 +141,15 @@ export const clientApi = {
       localStorage.setItem('blog_auth_token', token)
       // Clear any old token keys
       localStorage.removeItem('admin_token')
+      // Also set a cookie so server-side handlers can read the token if needed
+      try {
+        if (typeof document !== 'undefined') {
+          // Set cookie for same-site requests; no secure/httponly since this is client-side
+          document.cookie = `blog_auth_token=${token}; path=/; max-age=${60 * 60 * 24 * 7}`
+        }
+      } catch (err) {
+        // ignore
+      }
     },
   },
 }

@@ -26,8 +26,8 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
-    // Verify authentication
-    const token = request.headers.get('authorization')?.replace('Bearer ', '')
+    // Verify authentication (accept token from header or cookie)
+    const token = AuthService.extractTokenFromRequestHeaders(request.headers)
     if (!token) {
       return NextResponse.json(
         { error: 'Authorization required' },
@@ -35,9 +35,13 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const user = await AuthService.verifyToken(token)
-    console.log('[POST /api/blocks] User verified:', user ? JSON.stringify({ id: user.userId, email: user.email, role: user.role }) : 'NULL')
-    if (!user || (user.role !== 'admin' && user.role !== 'editor')) {
+    const payload = await AuthService.verifyToken(token)
+    console.log('[POST /api/blocks] Token payload:', payload ? JSON.stringify(payload) : 'NULL')
+  const roleValue = payload && (payload.role || (Array.isArray(payload.roles) ? payload.roles[0] : undefined)) ? String(payload.role || (Array.isArray(payload.roles) ? payload.roles[0] : '')).toLowerCase() : undefined
+    console.log('[POST /api/blocks] Resolved role:', roleValue)
+    if (!payload || (roleValue !== 'admin' && roleValue !== 'editor')) {
+      console.log('[POST /api/blocks] Authorization failed - role:', roleValue || 'NO PAYLOAD')
+      console.log('[POST /api/blocks] Request headers:', Object.fromEntries((request.headers as any).entries()))
       return NextResponse.json(
         { error: 'Editor or admin access required' },
         { status: 403 }

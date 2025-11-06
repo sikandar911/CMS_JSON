@@ -116,6 +116,51 @@ export class AuthService {
     return authHeader.substring(7)
   }
 
+  // Extract token from a request headers object (supports Headers API or plain record)
+  static extractTokenFromRequestHeaders(headers: any): string | null {
+    try {
+      // Try Authorization header first
+      let authHeader: string | null = null
+      if (headers && typeof headers.get === 'function') {
+        authHeader = headers.get('authorization') || headers.get('Authorization') || null
+      } else if (headers) {
+        authHeader = headers['authorization'] || headers['Authorization'] || null
+      }
+
+      const tokenFromHeader = this.extractTokenFromHeader(authHeader)
+      if (tokenFromHeader) {
+        console.log('[extractTokenFromRequestHeaders] Token found in Authorization header')
+        return tokenFromHeader
+      }
+
+      // Fallback: parse cookie header for blog_auth_token
+      let cookieHeader: string | null = null
+      if (headers && typeof headers.get === 'function') {
+        cookieHeader = headers.get('cookie') || headers.get('Cookie') || null
+      } else if (headers) {
+        cookieHeader = headers['cookie'] || headers['Cookie'] || null
+      }
+
+      console.log('[extractTokenFromRequestHeaders] Cookie header present:', !!cookieHeader)
+      if (cookieHeader) {
+        const cookies = cookieHeader.split(';').map(s => s.trim())
+        console.log('[extractTokenFromRequestHeaders] Cookies found:', cookies.length)
+        const match = cookies.find(s => s.startsWith('blog_auth_token='))
+        if (match) {
+          const token = match.split('=')[1]
+          console.log('[extractTokenFromRequestHeaders] Token found in cookie')
+          return token || null
+        }
+      }
+
+      console.log('[extractTokenFromRequestHeaders] No token found in headers or cookies')
+      return null
+    } catch (err) {
+      console.error('[extractTokenFromRequestHeaders] Error:', err)
+      return null
+    }
+  }
+
   // Check if user has required role
   static hasPermission(userRole: string, requiredRole: string): boolean {
     const roleHierarchy = ['editor', 'admin']

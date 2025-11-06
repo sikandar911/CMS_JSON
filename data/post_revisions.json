@@ -1,55 +1,92 @@
 {
-    "post_revisions": [
-        {
-            "id": 1,
-            "post_id": 1,
-            "revision_number": 1,
-            "author_id": 1,
-            "data_snapshot": {
-                "title": "How to Study Abroad in the UK",
-                "excerpt": "Planning to study abroad in the UK? You're making an excellent choice.",
-                "status": "draft",
-                "blocks": [
-                    {
-                        "id": "b1-title-001",
-                        "type": "title",
-                        "content": {
-                            "text": "How to Study Abroad in the UK",
-                            "level": "h1"
-                        }
-                    }
-                ]
-            },
-            "created_at": "2025-09-01T00:00:00.000Z"
+  "post_revisions": [
+    {
+      "id": 1,
+      "post_id": 1,
+      "revision_number": 1,
+      "author_id": 1,
+      "data_snapshot": {
+        "title": "How to Study Abroad in the UK",
+        "excerpt": "Planning to study abroad in the UK? You're making an excellent choice.",
+        "status": "draft",
+        "blocks": [
+          {
+            "id": "b1-title-001",
+            "type": "title",
+            "content": {
+              "text": "How to Study Abroad in the UK",
+              "level": "h1"
+            }
+          }
+        ]
+      },
+      "created_at": "2025-09-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "post_id": 1,
+      "revision_number": 2,
+      "author_id": 1,
+      "data_snapshot": {
+        "title": "How to Study Abroad in the UK",
+        "excerpt": "Planning to study abroad in the UK? You're making an excellent choice. The United Kingdom attracts over 600,000 international students annually.",
+        "status": "published",
+        "blocks": [
+          {
+            "id": "b1-title-001",
+            "type": "title",
+            "content": {
+              "text": "How to Study Abroad in the UK",
+              "level": "h1"
+            }
+          },
+          {
+            "id": "b1-para-001",
+            "type": "paragraph",
+            "content": {
+              "html": "<p>Planning to study abroad in the UK? You're making an excellent choice. The United Kingdom attracts over 600,000 international students annually, making it the second most popular study destination globally.</p>"
+            }
+          }
+        ]
+      },
+      "created_at": "2025-09-03T00:00:00.000Z"
+    },
+    {
+      "post_id": 1,
+      "revision_number": 3,
+      "author_id": 1,
+      "data_snapshot": {
+        "id": 1,
+        "slug": "how-to-study-abroad-in-the-uk",
+        "title": "How to Study Abroad in the UK",
+        "excerpt": "Planning to study abroad in the UK? You're making an excellent choice. This comprehensive guide explains exactly how to study in UK for international students, covering everything from university applications to student visa requirements for the 2025 academic year.",
+        "tags": [
+          "Study Abroad",
+          "UK Universities",
+          "International Students",
+          "Education"
+        ],
+        "category": "UK Universities",
+        "status": "published",
+        "author": {
+          "id": 1,
+          "name": "Blog Administrator"
         },
-        {
-            "id": 2,
-            "post_id": 1,
-            "revision_number": 2,
-            "author_id": 1,
-            "data_snapshot": {
-                "title": "How to Study Abroad in the UK",
-                "excerpt": "Planning to study abroad in the UK? You're making an excellent choice. The United Kingdom attracts over 600,000 international students annually.",
-                "status": "published",
-                "blocks": [
-                    {
-                        "id": "b1-title-001",
-                        "type": "title",
-                        "content": {
-                            "text": "How to Study Abroad in the UK",
-                            "level": "h1"
-                        }
-                    },
-                    {
-                        "id": "b1-para-001",
-                        "type": "paragraph",
-                        "content": {
-                            "html": "<p>Planning to study abroad in the UK? You're making an excellent choice. The United Kingdom attracts over 600,000 international students annually, making it the second most popular study destination globally.</p>"
-                        }
-                    }
-                ]
-            },
-            "created_at": "2025-09-03T00:00:00.000Z"
-        }
-    ]
+        "canonical_url": "https://example.com/blog/how-to-study-abroad-in-the-uk",
+        "published_at": "2025-09-03T00:00:00.000Z",
+        "meta_title": "How to Study Abroad in the UK - Complete Guide 2025",
+        "meta_description": "Complete guide for international students on how to study abroad in the UK. Learn about university applications, visa requirements, costs, and opportunities in 2025.",
+        "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1759752597/blog_image_a2jalg.jpg",
+        "featured_image_id": 1,
+        "language": "en",
+        "created_at": "2025-09-01T00:00:00.000Z",
+        "updated_at": "2025-11-03T09:49:08.813Z",
+        "active": 1,
+        "author_id": 1
+      },
+      "edited_at": "2025-11-06T08:14:33.258Z",
+      "id": 3,
+      "created_at": "2025-11-06T08:14:33.259Z"
+    }
+  ]
 }

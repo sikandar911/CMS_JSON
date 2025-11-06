@@ -39,30 +39,43 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
-    // Verify authentication
-    const token = request.headers.get('authorization')?.replace('Bearer ', '')
-    console.log('[POST /api/posts] Token received:', token ? 'YES' : 'NO')
+    console.log('[POST /api/posts] === NEW REQUEST ===')
     
+    // Verify authentication (accept token from Authorization header or cookie)
+    const token = AuthService.extractTokenFromRequestHeaders(request.headers)
+    console.log('[POST /api/posts] Token present:', token ? 'YES (length=' + token.length + ')' : 'NO')
+
     if (!token) {
-      console.log('[POST /api/posts] No token provided')
+      console.log('[POST /api/posts] No token provided - returning 401')
       return NextResponse.json(
         { error: 'Authorization required' },
         { status: 401 }
       )
     }
 
-    const user = await AuthService.verifyToken(token)
-    console.log('[POST /api/posts] User verified:', user ? JSON.stringify({ id: user.userId, email: user.email, role: user.role }) : 'NULL')
-    
-    if (!user || (user.role !== 'admin' && user.role !== 'editor')) {
-      console.log('[POST /api/posts] Authorization failed - user role:', user?.role || 'NO USER')
+    const payload = await AuthService.verifyToken(token)
+    console.log('[POST /api/posts] Payload:', payload ? JSON.stringify({ userId: payload.userId, email: payload.email, role: payload.role }) : 'NULL')
+
+    if (!payload) {
+      console.log('[POST /api/posts] Token verification failed - returning 403')
       return NextResponse.json(
         { error: 'Editor or admin access required' },
         { status: 403 }
       )
     }
-    
-    console.log('[POST /api/posts] Authorization successful')
+
+    const roleValue = payload.role ? String(payload.role).toLowerCase() : undefined
+    console.log('[POST /api/posts] Role check: role=', roleValue, ', allowed:', roleValue === 'admin' || roleValue === 'editor')
+
+    if (roleValue !== 'admin' && roleValue !== 'editor') {
+      console.log('[POST /api/posts] Role not admin or editor - returning 403')
+      return NextResponse.json(
+        { error: 'Editor or admin access required' },
+        { status: 403 }
+      )
+    }
+
+    console.log('[POST /api/posts] Authorization successful for userId=', payload.userId)
 
     const body = await request.json()
     const newPost = await postsApi.create(body)

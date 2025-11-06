@@ -29,6 +29,7 @@ export default function TabBlock({
   const { theme = 'default', orientation = 'horizontal' } = settings
   const { tabs = [] } = content
   const [activeTab, setActiveTab] = useState<string>(tabs[0]?.id || '')
+  const [isFading, setIsFading] = React.useState(false)
 
   React.useEffect(() => {
     if (tabs.length > 0 && !activeTab) {
@@ -88,7 +89,7 @@ export default function TabBlock({
   }
 
   const getTabButtonClasses = (isActive: boolean) => {
-    const base = 'px-5 py-3 font-semibold text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#FC7300] focus:ring-offset-2'
+    const base = 'px-5 py-3 font-semibold text-sm transition-all duration-200 '
     
     switch (theme) {
       case 'pills':
@@ -162,7 +163,7 @@ export default function TabBlock({
         {/* Editor Tabs */}
         <div className="space-y-4">
           {tabs.map((tab, index) => (
-            <div key={tab.id} className="border border-gray-200 rounded-lg">
+            <div key={tab.id || `tab-${index}`} className="border border-gray-200 rounded-lg">
               <div className="p-3 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-sm font-medium">Tab {index + 1}</span>
@@ -232,16 +233,28 @@ export default function TabBlock({
     )
   }
 
+  const handleTabChange = (tabId: string) => {
+    if (tabId === activeTab) return
+    // fade out current content, switch tab, then fade in
+    setIsFading(true)
+    const fadeOut = 180
+    const fadeInDelay = 30
+    setTimeout(() => {
+      setActiveTab(tabId)
+      setTimeout(() => setIsFading(false), fadeInDelay)
+    }, fadeOut)
+  }
+
   return (
     <div className={containerClasses}>
       {/* Tab List */}
       <div className={getTabListClasses()}>
-        {tabs.map((tab) => (
+        {tabs.map((tab, index) => (
           <button
-            key={tab.id}
+            key={tab.id || `tab-${index}`}
             type="button"
             className={getTabButtonClasses(activeTab === tab.id)}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => handleTabChange(tab.id)}
           >
             {tab.title}
           </button>
@@ -249,15 +262,20 @@ export default function TabBlock({
       </div>
 
       {/* Tab Content */}
-      <div className={getContentClasses()}>
-        {tabs.map((tab) => (
-          <div
-            key={tab.id}
-            className={`${activeTab === tab.id ? 'block' : 'hidden'} prose prose-sm max-w-none`}
-          >
-            <div dangerouslySetInnerHTML={{ __html: tab.content }} />
-          </div>
-        ))}
+      <div className={`${getContentClasses()} relative`}>
+        {tabs.map((tab, index) => {
+          const isActive = activeTab === tab.id
+          return (
+            <div
+              key={tab.id || `tab-${index}`}
+              // keep only active tab interactive; animate opacity during transitions
+              className={`prose prose-sm max-w-none transition-opacity duration-200 ${isActive ? (isFading ? 'opacity-0' : 'opacity-100') : 'hidden'}`}
+              aria-hidden={!isActive ? true : false}
+            >
+              <div dangerouslySetInnerHTML={{ __html: tab.content }} />
+            </div>
+          )
+        })}
       </div>
     </div>
   )

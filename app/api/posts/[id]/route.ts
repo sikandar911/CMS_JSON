@@ -32,8 +32,8 @@ export async function GET(request: NextRequest, { params }: RouteContext) {
 
 export async function PUT(request: NextRequest, { params }: RouteContext) {
   try {
-    // Verify authentication
-    const token = request.headers.get('authorization')?.replace('Bearer ', '')
+    // Verify authentication (accept token from Authorization header or cookie)
+    const token = AuthService.extractTokenFromRequestHeaders(request.headers)
     if (!token) {
       return NextResponse.json(
         { error: 'Authorization required' },
@@ -42,10 +42,12 @@ export async function PUT(request: NextRequest, { params }: RouteContext) {
     }
 
     const payload = await AuthService.verifyToken(token)
-    // Normalize payload to user object: verifyToken returns JWT payload with userId/email/role
-    const user = payload ? { id: payload.userId, email: payload.email, role: payload.role } : null
+  const roleValue = payload && (payload.role || (Array.isArray(payload.roles) ? payload.roles[0] : undefined)) ? String(payload.role || (Array.isArray(payload.roles) ? payload.roles[0] : '')).toLowerCase() : undefined
+    const user = payload ? { id: payload.userId, email: payload.email, role: roleValue } : null
 
-    if (!user || (user.role !== 'admin' && user.role !== 'editor')) {
+    if (!user || (roleValue !== 'admin' && roleValue !== 'editor')) {
+      console.log('[PUT /api/posts/:id] Authorization failed - role:', roleValue || 'NO PAYLOAD')
+      console.log('[PUT /api/posts/:id] Request headers:', Object.fromEntries((request.headers as any).entries()))
       return NextResponse.json(
         { error: 'Editor or admin access required' },
         { status: 403 }

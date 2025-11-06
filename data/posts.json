@@ -25,7 +25,7 @@
       "featured_image_id": 1,
       "language": "en",
       "created_at": "2025-09-01T00:00:00.000Z",
-      "updated_at": "2025-11-03T09:49:08.813Z",
+      "updated_at": "2025-11-06T08:14:33.255Z",
       "active": 1,
       "author_id": 1
     },
@@ -245,6 +245,28 @@
       "active": 1,
       "created_at": "2025-11-03T09:51:26.273Z",
       "updated_at": "2025-11-03T09:51:26.275Z"
+    },
+    {
+      "title": "AI-Powered University Applications: Transforming Student Success",
+      "slug": "ai-powered-university-applications-transforming-student-success",
+      "excerpt": "Imagine having a personal education advisor who never sleeps, knows every university requirement worldwide, and learns from",
+      "meta_title": "",
+      "meta_description": "",
+      "status": "published",
+      "tags": [],
+      "category": "Partner Universities & Success Stories",
+      "canonical_url": "",
+      "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1757498948/pexels-olly-3807755_pfv2gp.jpg",
+      "author": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "published_at": "2025-11-06T08:13:50.115Z",
+      "id": 13,
+      "language": "en",
+      "active": 1,
+      "created_at": "2025-11-06T08:13:50.198Z",
+      "updated_at": "2025-11-06T08:13:50.198Z"
     }
   ]
 }
