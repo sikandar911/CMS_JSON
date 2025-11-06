@@ -344,19 +344,27 @@ This project was created from the PostgreSQL-based CMS_Nextjs project. Key chang
 
 ## 🚀 Deployment
 
-### Vercel/Netlify
+### Vercel
 1. Push code to GitHub
-2. Import project in Vercel/Netlify
+2. Import project in Vercel
 3. Set environment variables:
    - `JWT_SECRET`
    - `UPSTASH_REDIS_REST_URL` (optional)
    - `UPSTASH_REDIS_REST_TOKEN` (optional)
 4. Deploy
 
-**Note**: JSON files persist in the deployment filesystem. For production, consider:
+**Important**: This project uses file-based JSON files in `data/` as the database. Vercel deployments run on ephemeral serverless instances where filesystem writes are not guaranteed to persist across function invocations or new deployments. If you rely on persistent JSON storage, consider one of the following for production:
+
+- Deploy to a server with a persistent filesystem (DigitalOcean, AWS EC2, etc.)
+- Use an external persistent store (S3, a managed database, or Upstash Redis)
+- Host this project as a long-running container where the `data/` folder is persisted
+
+For testing and low-traffic demo deployments, the JSON DB can work on Vercel during a single instance's lifetime, but do not rely on it for production durability.
+
+Recommended for production:
 - Regular backups to external storage (S3, etc.)
-- Using a proper database for high-traffic sites
-- Implementing file locking for concurrent writes
+- Use a proper database for high-traffic sites
+- Implement file locking or an external queue for concurrent writes
 
 ## 📝 License
 
