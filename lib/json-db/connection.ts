@@ -7,63 +7,69 @@ import fs from 'fs'
 import path from 'path'
 
 export class JsonDb {
-  private dataDir: string
 
-  constructor(dataDir: string = this.getDataDir()) {
-    this.dataDir = dataDir
-    this.ensureDataDir()
-  }
+  // Local (repo) data directory - read from committed files
+  private localDataDir: string
+  // Temp directory for writable operations on serverless (e.g., Vercel)
+  private tmpDataDir: string
 
-  /**
-   * Determine the data directory based on environment
-   * On Vercel (runtime), use /tmp; locally or during build, use /data
-   */
-  private getDataDir(): string {
-    // Check if running on Vercel at RUNTIME (not during build)
-    // VERCEL_URL is only set during request handling on Vercel, not during build
-    const isVercelRuntime = process.env.VERCEL === '1' && process.env.VERCEL_URL
-    
-    if (isVercelRuntime) {
-      const tmpDir = path.join('/tmp', 'cms-data')
-      console.log('[JsonDb] Running on Vercel at runtime, using /tmp:', tmpDir)
-      return tmpDir
-    }
+  constructor() {
+    this.localDataDir = path.join(process.cwd(), 'data')
+    this.tmpDataDir = path.join('/tmp', 'cms-data')
 
-    const localDir = path.join(process.cwd(), 'data')
-    console.log('[JsonDb] Running locally or during build, using:', localDir)
-    return localDir
-  }
-
-  private ensureDataDir() {
-    if (!fs.existsSync(this.dataDir)) {
+    // Ensure local data dir exists for local dev/build (no-op if present)
+    if (!fs.existsSync(this.localDataDir)) {
       try {
-        fs.mkdirSync(this.dataDir, { recursive: true })
-        console.log('[JsonDb] Created data directory:', this.dataDir)
-      } catch (error) {
-        console.error('[JsonDb] Failed to create data directory:', this.dataDir, error)
-        throw error
+        fs.mkdirSync(this.localDataDir, { recursive: true })
+        console.log('[JsonDb] Created local data directory:', this.localDataDir)
+      } catch (err) {
+        console.error('[JsonDb] Failed to create local data dir:', err)
       }
     }
+
+    // Ensure tmp dir exists if running in an environment that supports it
+    try {
+      if (!fs.existsSync(this.tmpDataDir)) {
+        fs.mkdirSync(this.tmpDataDir, { recursive: true })
+        console.log('[JsonDb] Created tmp data directory:', this.tmpDataDir)
+      }
+    } catch (err) {
+      // tmp may not be writable on some environments; we'll create lazily on write
+      // Log and continue
+      console.log('[JsonDb] tmp data directory not created at startup (will attempt on write):', this.tmpDataDir, err)
+    }
   }
+
+  
 
   /**
    * Read JSON file with error handling
+   * Priority: read committed `data/` directory first (read-only), then fallback to /tmp if present
    */
   read<T>(filename: string): T {
-    const filePath = path.join(this.dataDir, filename)
-    
+    const localPath = path.join(this.localDataDir, filename)
+    const tmpPath = path.join(this.tmpDataDir, filename)
+
     try {
-      if (!fs.existsSync(filePath)) {
-        console.log('[JsonDb.read] File does not exist:', filePath, '- returning empty structure')
-        // Return empty structure based on filename
-        return this.getEmptyStructure(filename) as T
+      // Prefer committed data in repository (available during build and in read-only runtime)
+      if (fs.existsSync(localPath)) {
+        const data = fs.readFileSync(localPath, 'utf-8')
+        const parsed = JSON.parse(data)
+        console.log('[JsonDb.read] Read from local data dir:', localPath)
+        return parsed
       }
 
-      const data = fs.readFileSync(filePath, 'utf-8')
-      const parsed = JSON.parse(data)
-      console.log('[JsonDb.read] Successfully read', filename, '- entries:', 
-        (parsed.posts?.length || parsed.users?.length || parsed.post_blocks?.length || 0))
-      return parsed
+      // Fallback to /tmp (may exist for transient writes)
+      if (fs.existsSync(tmpPath)) {
+        const data = fs.readFileSync(tmpPath, 'utf-8')
+        const parsed = JSON.parse(data)
+        console.log('[JsonDb.read] Read from tmp data dir:', tmpPath)
+        return parsed
+      }
+
+      // No file found
+      console.log('[JsonDb.read] File not found in local or tmp:', filename, '- returning empty structure')
+      return this.getEmptyStructure(filename) as T
     } catch (error) {
       console.error(`[JsonDb.read] Error reading ${filename}:`, error)
       return this.getEmptyStructure(filename) as T
@@ -73,11 +79,18 @@ export class JsonDb {
   /**
    * Write JSON file atomically
    */
+  /**
+   * Write JSON file atomically
+   * On serverless (Vercel runtime) write to /tmp; locally write to committed `data/` dir
+   */
   write<T>(filename: string, data: T): void {
-    const filePath = path.join(this.dataDir, filename)
+    // Decide where to write: prefer tmp for runtime writes, otherwise local data dir
+    const isVercelRuntime = process.env.VERCEL === '1' && !!process.env.VERCEL_URL
+    const writeDir = isVercelRuntime ? this.tmpDataDir : this.localDataDir
+    const filePath = path.join(writeDir, filename)
     const tempPath = `${filePath}.tmp`
 
-    console.log('[JsonDb.write] Attempting to write:', filename, 'to', this.dataDir)
+    console.log('[JsonDb.write] Attempting to write:', filename, 'to', writeDir, 'isVercelRuntime=', isVercelRuntime)
 
     try {
       // Ensure directory exists before writing
@@ -91,7 +104,7 @@ export class JsonDb {
       const jsonString = JSON.stringify(data, null, 2)
       fs.writeFileSync(tempPath, jsonString, 'utf-8')
       console.log('[JsonDb.write] Temp file written:', tempPath)
-      
+
       // Rename temp file to actual file (atomic operation)
       fs.renameSync(tempPath, filePath)
       console.log('[JsonDb.write] File successfully written:', filePath)
