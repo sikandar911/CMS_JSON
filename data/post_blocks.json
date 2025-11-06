@@ -1,0 +1,2226 @@
+{
+  "post_blocks": [
+    {
+      "id": "b1-texteditor-001",
+      "post_id": 1,
+      "index": 0,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "textAlign": null,
+                "level": 2
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "How to Study Abroad in the UK"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "attrs": {
+                "textAlign": null
+              }
+            }
+          ]
+        },
+        "html": "<h2>How to Study Abroad in the UK</h2><p></p>"
+      },
+      "settings": {
+        "alignment": "left",
+        "maxWidth": "100%"
+      },
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-01T00:00:00.000Z",
+      "updated_at": "2025-11-03T09:49:08.991Z",
+      "order": 1
+    },
+    {
+      "id": "b1-texteditor-002",
+      "post_id": 1,
+      "index": 1,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": {
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Planning to study abroad in the UK? You're making an excellent choice. The United Kingdom attracts over 600,000 international students annually, making it the second most popular study destination globally. This comprehensive guide explains exactly how to study in the UK for international students, covering everything from university applications to student visa requirements for the 2025 academic year.   Whether you’re targeting prestigious universities or seeking affordable study options, this guide provides the essential information you need to successfully study abroad UK and launch your international education journey."
+                }
+              ]
+            }
+          ]
+        },
+        "html": "<p>Planning to study abroad in the UK? You're making an excellent choice. The United Kingdom attracts over 600,000 international students annually, making it the second most popular study destination globally. This comprehensive guide explains exactly how to study in the UK for international students, covering everything from university applications to student visa requirements for the 2025 academic year.   Whether you’re targeting prestigious universities or seeking affordable study options, this guide provides the essential information you need to successfully study abroad UK and launch your international education journey.</p>"
+      },
+      "settings": {
+        "maxWidth": "760px",
+        "alignment": "left"
+      },
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-01T00:00:00.000Z",
+      "updated_at": "2025-11-03T09:49:09.011Z",
+      "order": 2
+    },
+    {
+      "id": "b1-accordion-001",
+      "post_id": 1,
+      "index": 2,
+      "type": "accordion",
+      "content": {
+        "items": [
+          {
+            "id": "acc1",
+            "title": "Why Choose UK Universities?",
+            "body": "<p>The UK education system offers compelling advantages for international students seeking world-class education:</p><ul><li>Home to 4 of the world's top 10 universities</li><li>Degrees recognized by employers worldwide</li><li>Research-led teaching with cutting-edge facilities</li><li>Strong industry connections and internship opportunities</li></ul>"
+          },
+          {
+            "id": "acc2",
+            "title": "UK Student Visa Requirements",
+            "body": "<p>To successfully apply for a student visa UK, international students must meet these requirements:</p><ul><li>Valid passport (minimum 6 months remaining)</li><li>Confirmation of Acceptance for Studies (CAS)</li><li>Proof of English language proficiency</li><li>Financial evidence (bank statements, scholarship letters)</li></ul>"
+          }
+        ]
+      },
+      "settings": {
+        "multipleOpen": false,
+        "theme": "default"
+      },
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-01T00:00:00.000Z",
+      "updated_at": "2025-11-03T09:49:09.051Z",
+      "order": 3
+    },
+    {
+      "id": "b2-texteditor-001",
+      "post_id": 2,
+      "index": 0,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 1
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The Student Mental Health Crisis 2025"
+                }
+              ]
+            }
+          ]
+        },
+        "html": "<h1>The Student Mental Health Crisis 2025</h1>"
+      },
+      "settings": {
+        "alignment": "left",
+        "maxWidth": "100%"
+      },
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-08-27T00:00:00.000Z",
+      "updated_at": "2025-08-27T00:00:00.000Z"
+    },
+    {
+      "id": "b2-texteditor-002",
+      "post_id": 2,
+      "index": 1,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The landscape of higher education has fundamentally shifted, and with it, the mental health challenges facing students have reached critical levels. Recent studies reveal that over 70% of students applying to universities report experiencing significant anxiety related to the application process."
+                }
+              ]
+            }
+          ]
+        },
+        "html": "<p>The landscape of higher education has fundamentally shifted, and with it, the mental health challenges facing students have reached critical levels. Recent studies reveal that over 70% of students applying to universities report experiencing significant anxiety related to the application process.</p>"
+      },
+      "settings": {
+        "maxWidth": "800px",
+        "alignment": "left"
+      },
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-08-27T00:00:00.000Z",
+      "updated_at": "2025-08-27T00:00:00.000Z"
+    },
+    {
+      "id": "b2-tabs-001",
+      "post_id": 2,
+      "index": 2,
+      "type": "tabs",
+      "content": {
+        "tabs": [
+          {
+            "id": "tab1",
+            "title": "Support Services",
+            "content": "<p>UAPP provides comprehensive mental health support including:</p><ul><li>Weekly wellbeing check-ins</li><li>Stress management workshops</li><li>Peer support groups</li><li>Professional counseling referrals</li></ul>"
+          },
+          {
+            "id": "tab2",
+            "title": "Application Support",
+            "content": "<p>Our application support includes:</p><ul><li>Breaking down personal statements into manageable chunks</li><li>A-Level results day counseling</li><li>Student finance guidance</li><li>Alternative route planning</li></ul>"
+          }
+        ]
+      },
+      "settings": {
+        "theme": "default",
+        "orientation": "horizontal"
+      },
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-08-27T00:00:00.000Z",
+      "updated_at": "2025-08-27T00:00:00.000Z"
+    },
+    {
+      "id": "b4-texteditor-001",
+      "post_id": 4,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "London the Education Hub"
+                }
+              ]
+            }
+          ]
+        },
+        "html": "<h2>London the Education Hub</h2>"
+      },
+      "settings": {
+        "alignment": "left",
+        "maxWidth": "100%"
+      },
+      "index": 0,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-22T11:23:16.002Z",
+      "updated_at": "2025-09-22T11:23:29.720Z",
+      "order": 1
+    },
+    {
+      "id": "b4-texteditor-002",
+      "post_id": 4,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "codeBlock",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla hic suscipit adipisci, maiores dolores, voluptatum explicabo beatae corporis tempore odit error vitae odio veritatis dolore. Accusantium maxime dolores voluptatibus. Quis quam aliquam exercitationem ab nesciunt illo tempore dolores possimus perferendis, cumque corrupti maxime molestias eligendi corporis deserunt ea voluptatibus distinctio numquam! Corrupti iste perspiciatis fugit aliquam veniam laudantium ipsam harum libero mollitia voluptas? Assumenda repellendus magni ea, itaque commodi, voluptate placeat doloribus corrupti debitis explicabo, quasi qui sint asperiores ipsaatque voluptatibus nulla odio sequi quia amet. Quasi magnam aliquid adipisci blanditiis. Ad blanditiis tempore cumque tenetur aut accusantium."
+                }
+              ]
+            }
+          ]
+        },
+        "html": "<pre><code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla hic suscipit adipisci, maiores dolores, voluptatum explicabo beatae corporis tempore odit error vitae odio veritatis dolore. Accusantium maxime dolores voluptatibus. Quis quam aliquam exercitationem ab nesciunt illo tempore dolores possimus perferendis, cumque corrupti maxime molestias eligendi corporis deserunt ea voluptatibus distinctio numquam! Corrupti iste perspiciatis fugit aliquam veniam laudantium ipsam harum libero mollitia voluptas? Assumenda repellendus magni ea, itaque commodi, voluptate placeat doloribus corrupti debitis explicabo, quasi qui sint asperiores ipsaatque voluptatibus nulla odio sequi quia amet. Quasi magnam aliquid adipisci blanditiis. Ad blanditiis tempore cumque tenetur aut accusantium.</code></pre>"
+      },
+      "settings": {
+        "alignment": "left",
+        "maxWidth": "100%"
+      },
+      "index": 1,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-22T11:23:16.002Z",
+      "updated_at": "2025-09-22T11:23:29.720Z",
+      "order": 2
+    },
+    {
+      "id": "5a11bee1-4e7e-401c-b59b-a11179426f87",
+      "post_id": 4,
+      "type": "card",
+      "content": {
+        "title": "Card Title 1",
+        "content": "Card content goes here...",
+        "imageUrl": "",
+        "link": {
+          "url": "https:/google.com",
+          "text": "Learn More",
+          "external": true
+        },
+        "image": "https://res.cloudinary.com/drgot7znf/image/upload/v1757498948/pexels-olly-3807755_pfv2gp.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla hic suscipit adipisci, maiores dolores, voluptatum explicabo beatae corporis tempore odit error vitae odio veritatis dolore. Accusantium maxime dolores voluptatibus. Quis quam aliquam exercitationem ab nesciunt illo tempore dolores possimus perferendis, cumque corrupti maxime molestias eligendi corporis deserunt ea voluptatibus distinctio numquam! Corrupti iste perspiciatis fugit aliquam veniam laudantium ipsam harum libero mollitia voluptas? "
+      },
+      "settings": {
+        "theme": "bordered",
+        "imagePosition": "left"
+      },
+      "index": 2,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-22T11:23:16.002Z",
+      "updated_at": "2025-09-22T11:23:29.720Z",
+      "order": 3
+    },
+    {
+      "id": "b5-texteditor-001",
+      "post_id": 5,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "AI-Powered University Applications: Transforming Student Success"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "html": "<h2>AI-Powered University Applications: Transforming Student Success</h2><p></p>"
+      },
+      "settings": {
+        "alignment": "left",
+        "maxWidth": "100%"
+      },
+      "index": 0,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-22T11:36:06.229Z",
+      "updated_at": "2025-10-07T09:29:33.566Z"
+    },
+    {
+      "id": "b5-texteditor-002",
+      "post_id": 5,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "This isn't science fiction – it's the reality of AI-powered university applications transforming how students achieve their educational dreams. Today's university application process has evolved beyond traditional methods. Students now harness artificial intelligence to discover perfect university matches, craft compelling personal statements, and navigate complex admission requirements with unprecedented precision. This technological revolution doesn't replace human insight-it amplifies it, creating opportunities for students who previously faced significant barriers."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The transformation is remarkable: students using AI-enhanced application strategies achieve acceptance rates exceeding 90%, compared to traditional methods hovering around 65%. At UAPP, we've witnessed this evolution firsthand, helping students from all countries leverage intelligent technology to unlock their educational potential."
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 3
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "What Are AI-Powered University Applications?"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Think of AI-powered university applications as having a brilliant research assistant, writing coach, and strategic planner rolled into one intelligent system. These applications use advanced computer algorithms to analyse vast amounts of educational data, helping students make smarter decisions at every step of their university journey."
+                }
+              ]
+            }
+          ]
+        },
+        "html": "<p>This isn't science fiction – it's the reality of AI-powered university applications transforming how students achieve their educational dreams. Today's university application process has evolved beyond traditional methods. Students now harness artificial intelligence to discover perfect university matches, craft compelling personal statements, and navigate complex admission requirements with unprecedented precision. This technological revolution doesn't replace human insight-it amplifies it, creating opportunities for students who previously faced significant barriers.</p><p>The transformation is remarkable: students using AI-enhanced application strategies achieve acceptance rates exceeding 90%, compared to traditional methods hovering around 65%. At UAPP, we've witnessed this evolution firsthand, helping students from all countries leverage intelligent technology to unlock their educational potential.</p><h3>What Are AI-Powered University Applications?</h3><p>Think of AI-powered university applications as having a brilliant research assistant, writing coach, and strategic planner rolled into one intelligent system. These applications use advanced computer algorithms to analyse vast amounts of educational data, helping students make smarter decisions at every step of their university journey.</p>"
+      },
+      "settings": {
+        "alignment": "justify",
+        "maxWidth": "100%"
+      },
+      "index": 1,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-22T11:36:06.229Z",
+      "updated_at": "2025-10-07T09:29:33.566Z"
+    },
+    {
+      "id": "31273822-5417-409b-bf0c-509bcd728896",
+      "post_id": 5,
+      "type": "image",
+      "content": {
+        "imageUrl": "https://res.cloudinary.com/drgot7znf/image/upload/v1757498948/pexels-olly-3807755_pfv2gp.jpg",
+        "alt": "",
+        "caption": "",
+        "link": "https://drive.google.com/drive/folders/16B3vSpWl3rBbtL2smDnJ5T_OdhbyuSjJ"
+      },
+      "settings": {
+        "alignment": "left",
+        "size": "full",
+        "aspectRatio": "16/9",
+        "rounded": true
+      },
+      "index": 2,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-22T11:36:06.229Z",
+      "updated_at": "2025-10-07T09:29:33.566Z"
+    },
+    {
+      "id": "a7ca8e8a-3658-40cf-80d6-b41cd8b3c4f0",
+      "post_id": 5,
+      "type": "button",
+      "content": {
+        "text": "Learn More",
+        "url": "https://drive.google.com/drive/folders/16B3vSpWl3rBbtL2smDnJ5T_OdhbyuSjJ",
+        "external": false
+      },
+      "settings": {
+        "style": "primary",
+        "size": "md",
+        "alignment": "left"
+      },
+      "index": 3,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-22T11:36:06.229Z",
+      "updated_at": "2025-10-07T09:29:33.566Z"
+    },
+    {
+      "id": "66072bb6-e6fd-408e-b78e-6cd10a6d4ce4",
+      "post_id": 5,
+      "type": "card",
+      "content": {
+        "title": "Card Title",
+        "content": "Card content goes here...",
+        "imageUrl": "",
+        "link": {
+          "url": "https://drive.google.com/drive/folders/16B3vSpWl3rBbtL2smDnJ5T_OdhbyuSjJ",
+          "text": "Learn More",
+          "external": true
+        },
+        "image": "https://res.cloudinary.com/drgot7znf/image/upload/v1757498948/pexels-olly-3807755_pfv2gp.jpg",
+        "description": " Breaking Down the Technology in Simple Terms: Smart University Matching. Imagine a system that knows your academic strengths, career dreams, and personal preferences, then searches through thousands of universities worldwide to find your perfect matches. AI matching goes beyond simple grade requirements-it considers factors like campus culture, graduate employment rates, and even climate preferences to suggest universities where you’ll truly thrive.    Strategic Timeline Management   University applications involve dozens of deadlines, document requirements, and country-specific regulations. AI systems create personalised calendars that track every requirement, send smart reminders, and optimise your application sequence for maximum success probability.    "
+      },
+      "settings": {
+        "theme": "default",
+        "imagePosition": "top"
+      },
+      "index": 4,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-22T11:36:06.229Z",
+      "updated_at": "2025-10-07T09:29:33.566Z"
+    },
+    {
+      "id": "b6-texteditor-001",
+      "post_id": 6,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 1
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Lorem ipsum dolor"
+                }
+              ]
+            }
+          ]
+        },
+        "html": "<h1>Lorem ipsum dolor</h1>"
+      },
+      "settings": {
+        "alignment": "left",
+        "maxWidth": "100%"
+      },
+      "index": 0,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-23T07:13:42.278Z",
+      "updated_at": "2025-10-06T07:21:21.915Z",
+      "order": 1
+    },
+    {
+      "id": "d69fb7fe-d454-4966-bf62-9de2555113d7",
+      "post_id": 6,
+      "type": "layout2",
+      "content": {
+        "columns": 2,
+        "columnWidths": [
+          50,
+          50
+        ],
+        "columnBlocks": [
+          [
+            {
+              "id": "8f5337e3-2349-46ed-bdaa-ff549273b97e",
+              "type": "texteditor",
+              "content": {
+                "json": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "consectetur adipisicing elit. Ullam aliquam ipsa magnam incidunt, architecto tempore dolorum maiores ratione ad eos doloremque porro nobis cumque non error voluptatem libero, facere vero suscipit impedit vel laborum! Voluptatibus, et id. Ipsum reprehenderit facilis exercitationem, placeat consequuntur saepe autem aut repudiandae mollitia, et eum!"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "html": "<p>consectetur adipisicing elit. Ullam aliquam ipsa magnam incidunt, architecto tempore dolorum maiores ratione ad eos doloremque porro nobis cumque non error voluptatem libero, facere vero suscipit impedit vel laborum! Voluptatibus, et id. Ipsum reprehenderit facilis exercitationem, placeat consequuntur saepe autem aut repudiandae mollitia, et eum!</p>"
+              },
+              "settings": {
+                "alignment": "justify",
+                "fontSize": "default",
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "margin": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 8,
+                  "left": 0
+                },
+                "maxWidth": "100%"
+              },
+              "order": 0
+            }
+          ],
+          [
+            {
+              "id": "612f580a-a621-41e1-9bfc-37e4fed849f7",
+              "type": "image",
+              "content": {
+                "imageUrl": "https://images.unsplash.com/photo-1731435265797-136ba0b95cda?q=80&w=576&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "alt": "",
+                "caption": ""
+              },
+              "settings": {
+                "alignment": "right",
+                "size": "full",
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "margin": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 8,
+                  "left": 0
+                },
+                "shadow": true
+              },
+              "order": 0
+            }
+          ]
+        ]
+      },
+      "settings": {
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "margin": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "gap": 16,
+        "minHeight": 150
+      },
+      "index": 1,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-09-23T07:13:42.278Z",
+      "updated_at": "2025-10-06T07:21:21.915Z"
+    },
+    {
+      "id": "b6-texteditor-002",
+      "post_id": 6,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dicta non adipisci repellat excepturi nulla, consectetur ab hic enim harum tenetur saepe cumque et ea suscipit quam neque tempore quas!"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dicta non adipisci repellat excepturi nulla, consectetur ab hic enim harum tenetur saepe cumque et ea suscipit quam neque tempore quas!"
+                }
+              ]
+            }
+          ]
+        },
+        "html": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dicta non adipisci repellat excepturi nulla, consectetur ab hic enim harum tenetur saepe cumque et ea suscipit quam neque tempore quas!</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dicta non adipisci repellat excepturi nulla, consectetur ab hic enim harum tenetur saepe cumque et ea suscipit quam neque tempore quas!</p>"
+      },
+      "settings": {
+        "alignment": "justify",
+        "maxWidth": "100%"
+      },
+      "index": 2,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-10-05T10:47:12.022Z",
+      "updated_at": "2025-10-06T07:21:21.915Z",
+      "order": 2
+    },
+    {
+      "id": "7e09605b-68e0-4987-b1a0-aece87545c75",
+      "post_id": 6,
+      "type": "layout2",
+      "content": {
+        "columns": 2,
+        "columnWidths": [
+          50,
+          50
+        ],
+        "columnBlocks": [
+          [
+            {
+              "id": "4769c46e-8560-421e-ad97-a6428ca09f20",
+              "type": "image",
+              "content": {
+                "imageUrl": "https://res.cloudinary.com/drgot7znf/image/upload/v1757498948/pexels-olly-3807755_pfv2gp.jpg",
+                "alt": "stu",
+                "caption": "",
+                "link": ""
+              },
+              "settings": {
+                "alignment": "center",
+                "size": "full",
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "margin": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 8,
+                  "left": 0
+                },
+                "aspectRatio": "16/9",
+                "rounded": true
+              },
+              "order": 0
+            },
+            {
+              "id": "9157b2a9-462d-4423-8e8b-55e8e018a593",
+              "type": "texteditor",
+              "content": {
+                "json": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "html": "<h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>"
+              },
+              "settings": {
+                "alignment": "left",
+                "fontSize": "default",
+                "color": "#141414",
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "margin": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 8,
+                  "left": 0
+                },
+                "maxWidth": "100%"
+              },
+              "order": 1
+            }
+          ],
+          [
+            {
+              "id": "779f9011-2c36-49fc-aa23-dbacec6967e5",
+              "type": "image",
+              "content": {
+                "imageUrl": "https://res.cloudinary.com/drgot7znf/image/upload/v1757498948/pexels-olly-3807755_pfv2gp.jpg",
+                "alt": "",
+                "caption": ""
+              },
+              "settings": {
+                "alignment": "center",
+                "size": "full",
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "margin": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 8,
+                  "left": 0
+                },
+                "aspectRatio": "16/9",
+                "rounded": true
+              },
+              "order": 0
+            },
+            {
+              "id": "24df8de3-6dfc-49c6-b3f5-4ce00fb76337",
+              "type": "texteditor",
+              "content": {
+                "json": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "html": "<h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>"
+              },
+              "settings": {
+                "alignment": "left",
+                "fontSize": "default",
+                "color": "default",
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "margin": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 8,
+                  "left": 0
+                },
+                "maxWidth": "100%"
+              },
+              "order": 1
+            }
+          ]
+        ]
+      },
+      "settings": {
+        "padding": {
+          "top": 16,
+          "right": 16,
+          "bottom": 16,
+          "left": 16
+        },
+        "margin": {
+          "top": 0,
+          "right": 0,
+          "bottom": 16,
+          "left": 0
+        },
+        "gap": 16,
+        "minHeight": 150
+      },
+      "index": 3,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-10-06T07:15:23.959Z",
+      "updated_at": "2025-10-06T07:21:21.915Z",
+      "order": 3
+    },
+    {
+      "id": "b7-texteditor-001",
+      "post_id": 7,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The landscape of international education is constantly evolving, and for students dreaming of studying in the United States, a significant new opportunity has emerged."
+                }
+              ]
+            }
+          ]
+        },
+        "html": "<h2>The landscape of international education is constantly evolving, and for students dreaming of studying in the United States, a significant new opportunity has emerged.</h2>"
+      },
+      "settings": {
+        "alignment": "left",
+        "maxWidth": "100%"
+      },
+      "index": 0,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-10-06T07:31:52.776Z",
+      "updated_at": "2025-10-06T07:33:20.495Z"
+    },
+    {
+      "id": "b7-texteditor-001",
+      "post_id": 7,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The landscape of international education is constantly evolving, and for students dreaming of studying in the United States, a significant new opportunity has emerged. UAPP’s latest partnership with Troy University represents more than just another study abroad option – it’s a gateway to accessible American higher education that doesn’t compromise on quality or support. For many international students, the idea of studying in the USA can feel overwhelming."
+                }
+              ]
+            }
+          ]
+        },
+        "html": "<p>The landscape of international education is constantly evolving, and for students dreaming of studying in the United States, a significant new opportunity has emerged. UAPP’s latest partnership with Troy University represents more than just another study abroad option – it’s a gateway to accessible American higher education that doesn’t compromise on quality or support. For many international students, the idea of studying in the USA can feel overwhelming.</p>"
+      },
+      "settings": {
+        "alignment": "left",
+        "maxWidth": "100%"
+      },
+      "index": 1,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-10-06T07:31:52.776Z",
+      "updated_at": "2025-10-06T07:33:20.495Z"
+    },
+    {
+      "id": "22090539-465c-4f82-8ef2-0cf8eec6fe4f",
+      "post_id": 7,
+      "type": "tabs",
+      "content": {
+        "tabs": [
+          {
+            "title": "For many international students",
+            "content": "the idea of studying in the USA can feel overwhelming. Between complex application processes, visa requirements, and financial considerations, the dream often feels out of reach.&nbsp;This new partnership aims to change that narrative entirely.&nbsp; Why the USA Continues to Attract Global Learners The United States remains one of the world’s premier destinations for higher education, and for good reason. American universities consistently rank among the best globally, offering cutting-edge research opportunities, diverse academic programs, and a multicultural learning environment"
+          },
+          {
+            "id": "tab-1759735862565",
+            "title": "Why the USA Continues to Attract Global Learners ",
+            "content": "<p>The United States remains one of the world’s premier destinations for higher education, and for good reason. American universities consistently rank among the best globally, offering cutting-edge research opportunities, diverse academic programs, and a multicultural learning environment that prepares students for the global workforce.&nbsp; &nbsp; What makes American education particularly attractive is its emphasis on practical, career-focused learning. Students don’t</p>"
+          }
+        ]
+      },
+      "settings": {
+        "orientation": "horizontal",
+        "theme": "default",
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "margin": {
+          "top": 0,
+          "right": 0,
+          "bottom": 16,
+          "left": 0
+        }
+      },
+      "index": 2,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-10-06T07:31:52.776Z",
+      "updated_at": "2025-10-06T07:33:20.495Z"
+    },
+    {
+      "id": "a71d0f94-b897-4d55-afaa-9f9acd80e832",
+      "post_id": 7,
+      "type": "card",
+      "content": {
+        "title": "Why the USA Continues to Attract Global Learners ",
+        "content": "Card content goes here...",
+        "imageUrl": "",
+        "link": {
+          "url": "uapp.uk",
+          "text": "Learn More",
+          "external": true
+        },
+        "image": "https://res.cloudinary.com/drgot7znf/image/upload/v1757498948/pexels-olly-3807755_pfv2gp.jpg",
+        "description": "This new partnership aims to change that narrative entirely.  Why the USA Continues to Attract Global Learners The United States remains one of the world’s premier destinations for higher education, and for good reason. American universities consistently rank among the best globally, offering cutting-edge research opportunities, diverse academic programs, and a multicultural learning environment"
+      },
+      "settings": {
+        "theme": "default",
+        "imagePosition": "top",
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "margin": {
+          "top": 0,
+          "right": 0,
+          "bottom": 16,
+          "left": 0
+        }
+      },
+      "index": 3,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-10-06T07:33:20.495Z",
+      "updated_at": "2025-10-06T07:33:20.495Z"
+    },
+    {
+      "id": "a5d78732-867e-48c7-978b-715805eda151",
+      "post_id": 8,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+                },
+                {
+                  "type": "hardBreak"
+                }
+              ]
+            },
+            {
+              "type": "orderedList",
+              "attrs": {
+                "start": 1,
+                "type": null
+              },
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Voluptatum facere distinctio error, labore "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "recusandae nihil. Nam modi, quos incidunt "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "at a, adipisci animi rerum odit voluptates, "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "blockquote",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "uapp.uk",
+                            "target": "_blank",
+                            "rel": "noopener noreferrer nofollow",
+                            "class": "text-[#FC7300] hover:text-[#e66800] underline"
+                          }
+                        }
+                      ],
+                      "text": "pariatur"
+                    },
+                    {
+                      "type": "text",
+                      "text": " veritatis iusto in consequatur voluptatum fugit? Veritatis, ipsam modi ex assumenda eaque omnis possimus labore reprehenderit numquam in! Magni modi maxime animi sint vitae nostrum eum ad exercitationem voluptate, facilis magnam omnis enim iste veritatis reiciendis unde placeat ipsum iusto error? Totam excepturi fuga non aspernatur provident temporibus libero molestiae quis dignissimos quod officiis reiciendis, quia officia esse? Eius asperiores voluptatem tenetur atque? Pariatur quam eveniet culpa sunt veniam cupiditate enim nam facere?"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "uapp.uk",
+                        "target": "_blank",
+                        "rel": "noopener noreferrer nofollow",
+                        "class": "text-[#FC7300] hover:text-[#e66800] underline"
+                      }
+                    }
+                  ],
+                  "text": "pariatur"
+                },
+                {
+                  "type": "text",
+                  "text": " "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ],
+                  "text": "veritatis iusto in consequatur"
+                },
+                {
+                  "type": "text",
+                  "text": " voluptatum fugit? Veritatis, ipsam modi ex assumenda eaque omnis possimus labore reprehenderit numquam in! Magni modi maxime animi sint vitae nostrum eum ad exercitationem voluptate, facilis magnam omnis enim iste veritatis reiciendis unde placeat ipsum iusto error? Totam excepturi fuga non aspernatur provident temporibus libero molestiae quis dignissimos quod officiis reiciendis, quia officia esse? Eius asperiores voluptatem tenetur atque? Pariatur quam eveniet culpa sunt veniam cupiditate enim nam facere?"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "uapp.uk",
+                        "target": "_blank",
+                        "rel": "noopener noreferrer nofollow",
+                        "class": "text-[#FC7300] hover:text-[#e66800] underline"
+                      }
+                    }
+                  ],
+                  "text": "pariatur"
+                },
+                {
+                  "type": "text",
+                  "text": " veritatis iusto in consequatur voluptatum fugit? "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ],
+                  "text": "Veritatis, ipsam modi ex"
+                },
+                {
+                  "type": "text",
+                  "text": " assumenda eaque omnis possimus labore reprehenderit numquam in! Magni modi maxime animi sint vitae nostrum eum ad exercitationem voluptate, facilis magnam omnis enim iste veritatis reiciendis unde placeat ipsum iusto error? Totam excepturi fuga non aspernatur provident temporibus libero molestiae quis dignissimos quod officiis reiciendis, quia officia esse? Eius asperiores voluptatem tenetur atque? Pariatur quam eveniet culpa sunt veniam cupiditate enim nam facere?"
+                }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "bold"
+                            }
+                          ],
+                          "text": "Component file location"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Create "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ],
+                                  "text": "components/blocks/TextEditor.tsx"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "bold"
+                            }
+                          ],
+                          "text": "Functionality"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Implement using "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Tiptap React"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Include "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "StarterKit"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " (for bold, italic, underline, headings, lists, blockquote, code, etc.)."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Add "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Link"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ", "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Image"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ", and "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "Table"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " extensions."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Support "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "block-level content"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " (paragraphs, headings, lists, tables, code blocks, blockquote, horizontal rule)."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Provide "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "toolbar buttons"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " for each feature (bold, italic, underline, link, image upload, heading, lists, quote, code, undo/redo)."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Toolbar should be "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "sticky"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": ": it remains visible while scrolling through long text."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "The editor content area should be "
+                                },
+                                {
+                                  "type": "text",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ],
+                                  "text": "auto-expanding"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " with text."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The editor state should be controlled with props:"
+                }
+              ]
+            },
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "html": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></p><ol><li><p>Voluptatum facere distinctio error, labore </p></li><li><p>recusandae nihil. Nam modi, quos incidunt </p></li><li><p>at a, adipisci animi rerum odit voluptates, </p></li></ol><blockquote><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"text-[#FC7300] hover:text-[#e66800] underline\" href=\"uapp.uk\">pariatur</a> veritatis iusto in consequatur voluptatum fugit? Veritatis, ipsam modi ex assumenda eaque omnis possimus labore reprehenderit numquam in! Magni modi maxime animi sint vitae nostrum eum ad exercitationem voluptate, facilis magnam omnis enim iste veritatis reiciendis unde placeat ipsum iusto error? Totam excepturi fuga non aspernatur provident temporibus libero molestiae quis dignissimos quod officiis reiciendis, quia officia esse? Eius asperiores voluptatem tenetur atque? Pariatur quam eveniet culpa sunt veniam cupiditate enim nam facere?</p></blockquote><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"text-[#FC7300] hover:text-[#e66800] underline\" href=\"uapp.uk\">pariatur</a> <strong>veritatis iusto in consequatur</strong> voluptatum fugit? Veritatis, ipsam modi ex assumenda eaque omnis possimus labore reprehenderit numquam in! Magni modi maxime animi sint vitae nostrum eum ad exercitationem voluptate, facilis magnam omnis enim iste veritatis reiciendis unde placeat ipsum iusto error? Totam excepturi fuga non aspernatur provident temporibus libero molestiae quis dignissimos quod officiis reiciendis, quia officia esse? Eius asperiores voluptatem tenetur atque? Pariatur quam eveniet culpa sunt veniam cupiditate enim nam facere?</p><p><br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"text-[#FC7300] hover:text-[#e66800] underline\" href=\"uapp.uk\">pariatur</a> veritatis iusto in consequatur voluptatum fugit? <strong>Veritatis, ipsam modi ex</strong> assumenda eaque omnis possimus labore reprehenderit numquam in! Magni modi maxime animi sint vitae nostrum eum ad exercitationem voluptate, facilis magnam omnis enim iste veritatis reiciendis unde placeat ipsum iusto error? Totam excepturi fuga non aspernatur provident temporibus libero molestiae quis dignissimos quod officiis reiciendis, quia officia esse? Eius asperiores voluptatem tenetur atque? Pariatur quam eveniet culpa sunt veniam cupiditate enim nam facere?</p><ul><li><p><strong>Component file location</strong></p><ul><li><p>Create <code>components/blocks/TextEditor.tsx</code>.</p></li></ul></li><li><p><strong>Functionality</strong></p><ul><li><p>Implement using <strong>Tiptap React</strong>.</p></li><li><p>Include <strong>StarterKit</strong> (for bold, italic, underline, headings, lists, blockquote, code, etc.).</p></li><li><p>Add <strong>Link</strong>, <strong>Image</strong>, and <strong>Table</strong> extensions.</p></li><li><p>Support <strong>block-level content</strong> (paragraphs, headings, lists, tables, code blocks, blockquote, horizontal rule).</p></li><li><p>Provide <strong>toolbar buttons</strong> for each feature (bold, italic, underline, link, image upload, heading, lists, quote, code, undo/redo).</p></li><li><p>Toolbar should be <strong>sticky</strong>: it remains visible while scrolling through long text.</p></li><li><p>The editor content area should be <strong>auto-expanding</strong> with text.</p></li></ul></li></ul><p>The editor state should be controlled with props:</p><p></p>"
+      },
+      "settings": {
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "margin": {
+          "top": 0,
+          "right": 0,
+          "bottom": 16,
+          "left": 0
+        },
+        "maxWidth": "800px"
+      },
+      "index": 0,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-10-07T06:43:47.263Z",
+      "updated_at": "2025-10-07T07:08:59.656Z"
+    },
+    {
+      "id": "f64da2fe-3d65-44bc-83ee-bdfb6d4e2dab",
+      "post_id": 1,
+      "type": "layout2",
+      "content": {
+        "columns": 2,
+        "columnWidths": [
+          50,
+          50
+        ],
+        "columnBlocks": [
+          [
+            {
+              "id": "6f14c477-6680-41bc-964a-97b797b44d56",
+              "type": "card",
+              "content": {
+                "title": "Whether you’re targeting prestigious universities",
+                "content": "Card content goes here...",
+                "imageUrl": "",
+                "link": {
+                  "url": "#",
+                  "text": "learn more",
+                  "external": true
+                },
+                "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "description": "this guide provides the essential information you need to successfully study abroad UK and launch your international education journey. Why International Students Choose to Study Abroad in UK The UK education system offers compelling advantages for international students seeking world-class education:   Academic Excellence and Global Recognition Home to 4 of the world’s top 10 universities (QS World Rankings 2024) Degrees recognized by employers and institutions worldwide Research-led teaching with access to cutting-edge facilities Strong industry connections and internship opportunities   "
+              },
+              "settings": {
+                "theme": "bordered",
+                "imagePosition": "top",
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "margin": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 8,
+                  "left": 0
+                }
+              },
+              "order": 0
+            }
+          ],
+          [
+            {
+              "id": "51890e56-bc42-4abf-a045-7f6fc0db23ba",
+              "type": "card",
+              "content": {
+                "title": "Whether you’re targeting prestigious universities",
+                "content": "Card content goes here...",
+                "imageUrl": "",
+                "link": {
+                  "url": "#",
+                  "text": "learn more",
+                  "external": true
+                },
+                "description": "this guide provides the essential information you need to successfully study abroad UK and launch your international education journey. Why International Students Choose to Study Abroad in UK The UK education system offers compelling advantages for international students seeking world-class education:   Academic Excellence and Global Recognition Home to 4 of the world’s top 10 universities (QS World Rankings 2024) Degrees recognized by employers and institutions worldwide Research-led teaching with access to cutting-edge facilities Strong industry connections and internship opportunities   ",
+                "image": "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              },
+              "settings": {
+                "theme": "bordered",
+                "imagePosition": "top",
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "margin": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 8,
+                  "left": 0
+                }
+              },
+              "order": 0
+            }
+          ]
+        ]
+      },
+      "settings": {
+        "padding": {
+          "top": 20,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "margin": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "gap": 16,
+        "minHeight": 150
+      },
+      "index": 5,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-10-08T07:38:08.290Z",
+      "updated_at": "2025-11-03T09:49:09.086Z",
+      "order": 6
+    },
+    {
+      "id": "2f7e2b76-7616-4dc2-bf4c-4ea9928478c5",
+      "post_id": 1,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "textAlign": null,
+                "level": 2
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": " The modern student faces a unique set of challenges."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "attrs": {
+                "textAlign": "justify"
+              },
+              "content": [
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "type": "text",
+                  "text": "Social media comparison culture, economic uncertainty, climate anxiety, and the lingering effects of global disruptions. When combined with the traditional stressors of university applications – standardised testing, personal statements, interviews, and financial concerns – the result is a mental health crisis of unprecedented scope. University Applications UK: A Mental Health Minefield The Pressure Cooker Environment   University applications have evolved into high-stakes competitions where students feel their entire future hinges on acceptance letters. The process itself has become increasingly complex, requiring students to:   Maintain perfect grades while demonstrating “well-roundedness” Craft compelling personal narratives that set them apart from thousands of applicants Navigate complex financial aid applications Handle rejection from institutions they’ve dreamed of attending   Social Media’s Role in Amplifying Stress   Platforms like Instagram and TikTok have created a culture where students constantly compare their achievements with curated highlights from peers. The “college acceptance reveal” trend, while celebratory for some, can devastate those facing rejection or financial barriers to their preferred institutions. UAPP’s Approach to Holistic Student Support UAPP understands that applying to UK universities is stressful for everyone – whether you’re a domestic student navigating UCAS or an international student dealing with visa requirements and cultural adjustments. "
+                },
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "type": "hardBreak"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "content": [
+                {
+                  "type": "tableRow",
+                  "content": [
+                    {
+                      "type": "tableHeader",
+                      "attrs": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "colwidth": null
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "textAlign": null
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Platforms like Instagram"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableHeader",
+                      "attrs": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "colwidth": null
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "textAlign": null
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Platforms like Instagram"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableHeader",
+                      "attrs": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "colwidth": null
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "textAlign": null
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Platforms like Instagram"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableRow",
+                  "content": [
+                    {
+                      "type": "tableCell",
+                      "attrs": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "colwidth": null
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "textAlign": null
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "requirements and cultural adjustments. "
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableCell",
+                      "attrs": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "colwidth": null
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "textAlign": null
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "requirements and cultural adjustments. "
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableCell",
+                      "attrs": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "colwidth": null
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "textAlign": null
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "requirements and cultural adjustments. "
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tableRow",
+                  "content": [
+                    {
+                      "type": "tableCell",
+                      "attrs": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "colwidth": null
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "textAlign": null
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "requirements and cultural adjustments. "
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableCell",
+                      "attrs": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "colwidth": null
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "textAlign": null
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "requirements and cultural adjustments. "
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableCell",
+                      "attrs": {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "colwidth": null
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "textAlign": null
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "requirements and cultural adjustments. "
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "attrs": {
+                "textAlign": null
+              }
+            }
+          ]
+        },
+        "html": "<h2> The modern student faces a unique set of challenges.</h2><p style=\"text-align: justify;\"><br>Social media comparison culture, economic uncertainty, climate anxiety, and the lingering effects of global disruptions. When combined with the traditional stressors of university applications – standardised testing, personal statements, interviews, and financial concerns – the result is a mental health crisis of unprecedented scope. University Applications UK: A Mental Health Minefield The Pressure Cooker Environment   University applications have evolved into high-stakes competitions where students feel their entire future hinges on acceptance letters. The process itself has become increasingly complex, requiring students to:   Maintain perfect grades while demonstrating “well-roundedness” Craft compelling personal narratives that set them apart from thousands of applicants Navigate complex financial aid applications Handle rejection from institutions they’ve dreamed of attending   Social Media’s Role in Amplifying Stress   Platforms like Instagram and TikTok have created a culture where students constantly compare their achievements with curated highlights from peers. The “college acceptance reveal” trend, while celebratory for some, can devastate those facing rejection or financial barriers to their preferred institutions. UAPP’s Approach to Holistic Student Support UAPP understands that applying to UK universities is stressful for everyone – whether you’re a domestic student navigating UCAS or an international student dealing with visa requirements and cultural adjustments. <br><br></p><table class=\"border-collapse table-auto w-full border border-gray-300\" style=\"min-width: 75px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr class=\"border-b border-gray-300\"><th class=\"border border-gray-300 px-4 py-2 bg-[#F1F4F3] font-semibold text-[#045D5E]\" colspan=\"1\" rowspan=\"1\"><p>Platforms like Instagram</p></th><th class=\"border border-gray-300 px-4 py-2 bg-[#F1F4F3] font-semibold text-[#045D5E]\" colspan=\"1\" rowspan=\"1\"><p>Platforms like Instagram</p></th><th class=\"border border-gray-300 px-4 py-2 bg-[#F1F4F3] font-semibold text-[#045D5E]\" colspan=\"1\" rowspan=\"1\"><p>Platforms like Instagram</p></th></tr><tr class=\"border-b border-gray-300\"><td class=\"border border-gray-300 px-4 py-2\" colspan=\"1\" rowspan=\"1\"><p>requirements and cultural adjustments. </p></td><td class=\"border border-gray-300 px-4 py-2\" colspan=\"1\" rowspan=\"1\"><p>requirements and cultural adjustments. </p></td><td class=\"border border-gray-300 px-4 py-2\" colspan=\"1\" rowspan=\"1\"><p>requirements and cultural adjustments. </p></td></tr><tr class=\"border-b border-gray-300\"><td class=\"border border-gray-300 px-4 py-2\" colspan=\"1\" rowspan=\"1\"><p>requirements and cultural adjustments. </p></td><td class=\"border border-gray-300 px-4 py-2\" colspan=\"1\" rowspan=\"1\"><p>requirements and cultural adjustments. </p></td><td class=\"border border-gray-300 px-4 py-2\" colspan=\"1\" rowspan=\"1\"><p>requirements and cultural adjustments. </p></td></tr></tbody></table><p></p>"
+      },
+      "settings": {
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "margin": {
+          "top": 0,
+          "right": 0,
+          "bottom": 16,
+          "left": 0
+        }
+      },
+      "index": 3,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-10-08T07:47:08.698Z",
+      "updated_at": "2025-11-03T09:49:09.060Z",
+      "order": 4
+    },
+    {
+      "id": "e8966b3a-a9bd-486c-880e-d683e5245f94",
+      "post_id": 1,
+      "type": "image",
+      "content": {
+        "imageUrl": "https://res.cloudinary.com/drgot7znf/image/upload/v1757498948/pexels-olly-3807755_pfv2gp.jpg",
+        "alt": "",
+        "caption": ""
+      },
+      "settings": {
+        "alignment": "center",
+        "size": "full",
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "margin": {
+          "top": 0,
+          "right": 0,
+          "bottom": 16,
+          "left": 0
+        },
+        "aspectRatio": "16/9"
+      },
+      "index": 4,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2025-10-08T07:48:10.286Z",
+      "updated_at": "2025-11-03T09:49:09.070Z"
+    },
+    {
+      "post_id": 11,
+      "index": 0,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "textAlign": "left",
+                "level": 2
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ],
+                  "text": "The modern student faces a unique set of challenges."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "attrs": {
+                "textAlign": "left"
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The UK education system offers compelling advantages for international students seeking world-class education:"
+                }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Home to 4 of the world's top 10 universities"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Degrees recognized by employers worldwide"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Research-led teaching with cutting-edge facilities"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Strong industry connections and internship opportunities"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "blockquote",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "textAlign": null
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The United States remains one of the world’s premier destinations for higher education, and for good reason. American universities consistently rank among the best globally, offering cutting-edge research opportunities, diverse academic programs, and a multicultural learning environment that prepares students for the global workforce.    What makes American education particularly attractive is its emphasis on practical, career-focused learning. Students don’t"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "attrs": {
+                "textAlign": null
+              }
+            }
+          ]
+        },
+        "html": "<h2 style=\"text-align: left;\"><strong>The modern student faces a unique set of challenges.</strong></h2><p style=\"text-align: left;\">The UK education system offers compelling advantages for international students seeking world-class education:</p><ul><li><p>Home to 4 of the world's top 10 universities</p></li><li><p>Degrees recognized by employers worldwide</p></li><li><p>Research-led teaching with cutting-edge facilities</p></li><li><p>Strong industry connections and internship opportunities</p></li></ul><blockquote><p>The United States remains one of the world’s premier destinations for higher education, and for good reason. American universities consistently rank among the best globally, offering cutting-edge research opportunities, diverse academic programs, and a multicultural learning environment that prepares students for the global workforce.&nbsp; &nbsp; What makes American education particularly attractive is its emphasis on practical, career-focused learning. Students don’t</p></blockquote><p></p>"
+      },
+      "settings": {
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "margin": {
+          "top": 0,
+          "right": 0,
+          "bottom": 16,
+          "left": 0
+        }
+      },
+      "created_by": 1,
+      "updated_by": 1,
+      "order": 1,
+      "id": "b11-texteditor-1762162667717",
+      "created_at": "2025-11-03T09:37:47.718Z",
+      "updated_at": "2025-11-03T09:37:47.718Z"
+    },
+    {
+      "post_id": 12,
+      "index": 0,
+      "type": "texteditor",
+      "content": {
+        "json": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "textAlign": null,
+                "level": 1
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ],
+                  "text": "How to Study Abroad in the UK 2025"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "attrs": {
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The United States remains one of the world’s premier destinations for higher education, and for good reason. American universities consistently rank among the best globally, offering cutting-edge research opportunities, diverse academic programs, and a multicultural learning environment that prepares students for the global workforce.    What makes American education particularly attractive is its emphasis on practical, career-focused learning. "
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "attrs": {
+                "textAlign": null
+              }
+            },
+            {
+              "type": "paragraph",
+              "attrs": {
+                "textAlign": null
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The UK education system offers compelling advantages for international students seeking world-class education:"
+                }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Home to 4 of the world's top 10 universities"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Degrees recognized by employers worldwide"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Research-led teaching with cutting-edge facilities"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "textAlign": null
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Strong industry connections and internship opportunities"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "attrs": {
+                "textAlign": null
+              }
+            }
+          ]
+        },
+        "html": "<h1><strong>How to Study Abroad in the UK 2025</strong></h1><p>The United States remains one of the world’s premier destinations for higher education, and for good reason. American universities consistently rank among the best globally, offering cutting-edge research opportunities, diverse academic programs, and a multicultural learning environment that prepares students for the global workforce.&nbsp; &nbsp; What makes American education particularly attractive is its emphasis on practical, career-focused learning. </p><p></p><p>The UK education system offers compelling advantages for international students seeking world-class education:</p><ul><li><p>Home to 4 of the world's top 10 universities</p></li><li><p>Degrees recognized by employers worldwide</p></li><li><p>Research-led teaching with cutting-edge facilities</p></li><li><p>Strong industry connections and internship opportunities</p></li></ul><p></p>"
+      },
+      "settings": {
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "margin": {
+          "top": 0,
+          "right": 0,
+          "bottom": 16,
+          "left": 0
+        }
+      },
+      "created_by": 1,
+      "updated_by": 1,
+      "order": 1,
+      "id": "b12-texteditor-1762163486310",
+      "created_at": "2025-11-03T09:51:26.311Z",
+      "updated_at": "2025-11-03T09:51:26.311Z"
+    }
+  ]
+}

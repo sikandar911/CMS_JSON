@@ -23,8 +23,6 @@ yarn-error.log*
 *.tsbuildinfo
 
 .next
-data/post_blocks.json
-data/posts.json
 /generated/prisma
 /scripts
 DATABASE_MIGRATION.md

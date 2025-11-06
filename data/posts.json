@@ -1,0 +1,250 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "slug": "how-to-study-abroad-in-the-uk",
+      "title": "How to Study Abroad in the UK",
+      "excerpt": "Planning to study abroad in the UK? You're making an excellent choice. This comprehensive guide explains exactly how to study in UK for international students, covering everything from university applications to student visa requirements for the 2025 academic year.",
+      "tags": [
+        "Study Abroad",
+        "UK Universities",
+        "International Students",
+        "Education"
+      ],
+      "category": "UK Universities",
+      "status": "published",
+      "author": {
+        "id": 1,
+        "name": "Blog Administrator"
+      },
+      "canonical_url": "https://example.com/blog/how-to-study-abroad-in-the-uk",
+      "published_at": "2025-09-03T00:00:00.000Z",
+      "meta_title": "How to Study Abroad in the UK - Complete Guide 2025",
+      "meta_description": "Complete guide for international students on how to study abroad in the UK. Learn about university applications, visa requirements, costs, and opportunities in 2025.",
+      "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1759752597/blog_image_a2jalg.jpg",
+      "featured_image_id": 1,
+      "language": "en",
+      "created_at": "2025-09-01T00:00:00.000Z",
+      "updated_at": "2025-11-03T09:49:08.813Z",
+      "active": 1,
+      "author_id": 1
+    },
+    {
+      "id": 6,
+      "created_at": "2025-10-05T10:47:11.565Z",
+      "updated_at": "2025-10-06T07:21:21.833Z",
+      "title": "Top International Students Guide to UK University Clearing 2025",
+      "slug": "top-international-students-guide-to-uk-university-clearing-2025",
+      "excerpt": "If you're an international student considering UK universities through clearing, you're making one of the smartest educational investments possible. UK university clearing 2025 for international students isn't just about securing a university place – it's about accessing world-class education, diverse career opportunities, and a truly global experience.",
+      "meta_title": "",
+      "meta_description": "",
+      "status": "published",
+      "tags": [],
+      "category": "UK Universities",
+      "canonical_url": "",
+      "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1759731839/photo-1758270704925-fa59d93119c1_kjdvqg.jpg",
+      "author": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "published_at": "2025-10-05T10:47:11.542Z"
+    },
+    {
+      "id": 2,
+      "slug": "student-mental-health-crisis-2025",
+      "title": "The Student Mental Health Crisis 2025: Navigating University Applications",
+      "excerpt": "The landscape of higher education has fundamentally shifted, and with it, the mental health challenges facing students have reached high levels. Learn how to navigate university applications while maintaining your mental wellbeing.",
+      "tags": [
+        "Mental Health",
+        "University Applications",
+        "Student Wellbeing",
+        "UK Education"
+      ],
+      "category": "Student Life",
+      "status": "published",
+      "author": {
+        "id": 1,
+        "name": "Blog Administrator"
+      },
+      "canonical_url": "https://example.com/blog/student-mental-health-crisis-2025",
+      "published_at": "2025-08-29T00:00:00.000Z",
+      "meta_title": "Student Mental Health Crisis 2025: University Application Support",
+      "meta_description": "Navigate the university application process while protecting your mental health. Get support, tips, and resources for student wellbeing in 2025.",
+      "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1759752597/blog_image_a2jalg.jpg",
+      "featured_image_id": 2,
+      "language": "en",
+      "created_at": "2025-08-27T00:00:00.000Z",
+      "updated_at": "2025-08-29T00:00:00.000Z",
+      "active": 1
+    },
+    {
+      "id": 5,
+      "created_at": "2025-09-22T11:36:05.761Z",
+      "updated_at": "2025-10-07T09:29:33.542Z",
+      "title": "AI-Powered University Applications: Transforming Student Success",
+      "slug": "ai-powered-university-applications",
+      "excerpt": "Imagine having a personal education advisor who never sleeps, knows every university requirement worldwide, and learns from ",
+      "meta_title": "",
+      "meta_description": "",
+      "status": "published",
+      "tags": [],
+      "category": "Application Process",
+      "canonical_url": "",
+      "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1759731839/photo-1758270704925-fa59d93119c1_kjdvqg.jpg",
+      "author": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "published_at": "2025-09-22T11:36:05.385Z"
+    },
+    {
+      "id": 6,
+      "created_at": "2025-10-05T10:47:11.565Z",
+      "updated_at": "2025-10-06T07:21:21.833Z",
+      "title": "Top International Students Guide to UK University Clearing 2025",
+      "slug": "top-international-students-guide-to-uk-university-clearing-2025",
+      "excerpt": "If you’re an international student considering UK universities through clearing, you’re making one of the smartest educational investments possible. UK university clearing 2025 for international students isn’t just about securing a university place – it’s about accessing world-class education, diverse career opportunities, and a truly global experience.",
+      "meta_title": "",
+      "meta_description": "",
+      "status": "published",
+      "tags": [],
+      "category": "UK Universities",
+      "canonical_url": "",
+      "author": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "published_at": "2025-10-05T10:47:11.542Z"
+    },
+    {
+      "id": 7,
+      "created_at": "2025-10-06T07:31:52.445Z",
+      "updated_at": "2025-10-06T07:33:20.450Z",
+      "title": "How UAPPs Troy University Partnership Opens New Doors for International Students",
+      "slug": "how-uapps-troy-university-partnership-opens-new-doors-for-international-students",
+      "excerpt": "How UAPPs Troy University Partnership Opens New Doors for International Students.",
+      "meta_title": "",
+      "meta_description": "",
+      "status": "published",
+      "tags": [
+        "UK"
+      ],
+      "category": "Student Visa",
+      "canonical_url": "",
+      "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1759752597/blog_image_a2jalg.jpg",
+      "author": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "published_at": "2025-10-06T07:31:52.406Z"
+    },
+    {
+      "id": 8,
+      "created_at": "2025-10-07T06:43:47.015Z",
+      "updated_at": "2025-10-07T07:08:59.621Z",
+      "title": "test",
+      "slug": "test",
+      "excerpt": " ",
+      "meta_title": "",
+      "meta_description": "",
+      "status": "draft",
+      "tags": [],
+      "category": "Student Life",
+      "canonical_url": "",
+      "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1759731844/default-blog-image.jpg",
+      "author": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "published_at": null
+    },
+    {
+      "title": "How to Study Abroad in the UK 2025",
+      "slug": "how-to-study-abroad-in-the-uk-2025",
+      "excerpt": "The modern student faces a unique set of challenges.",
+      "meta_title": "How to Study Abroad in the UK 2025",
+      "meta_description": "The United States remains one of the world’s premier destinations for higher education, and for good reason. American universities consistently rank among the best globally, offering cutting-edge research opportunities, diverse academic programs, and a multicultural learning environment that prepares students for the global workforce.    What makes American education particularly attractive is its emphasis on practical, career-focused learning. Students don’t",
+      "status": "published",
+      "tags": [],
+      "category": "Student Life",
+      "canonical_url": "",
+      "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1759752597/blog_image_a2jalg.jpg",
+      "author": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "published_at": "2025-11-03T09:33:59.394Z",
+      "id": 9,
+      "language": "en",
+      "active": 0,
+      "created_at": "2025-11-03T09:33:59.821Z",
+      "updated_at": "2025-11-03T09:45:41.654Z"
+    },
+    {
+      "title": "How to Study Abroad in the UK 2025",
+      "slug": "how-to-study-abroad-in-the-uk-2025",
+      "excerpt": "The modern student faces a unique set of challenges.",
+      "meta_title": "How to Study Abroad in the UK 2025",
+      "meta_description": "The United States remains one of the world’s premier destinations for higher education, and for good reason. American universities consistently rank among the best globally, offering cutting-edge research opportunities, diverse academic programs, and a multicultural learning environment that prepares students for the global workforce.    What makes American education particularly attractive is its emphasis on practical, career-focused learning. Students don’t",
+      "status": "published",
+      "tags": [],
+      "category": "Student Life",
+      "canonical_url": "",
+      "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1759752597/blog_image_a2jalg.jpg",
+      "author": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "published_at": "2025-11-03T09:34:24.749Z",
+      "id": 10,
+      "language": "en",
+      "active": 0,
+      "created_at": "2025-11-03T09:34:24.773Z",
+      "updated_at": "2025-11-03T09:45:41.679Z"
+    },
+    {
+      "title": "How to Study Abroad in the UK 2025",
+      "slug": "how-to-study-abroad-in-the-uk-2025",
+      "excerpt": "The modern student faces a unique set of challenges.",
+      "meta_title": "How to Study Abroad in the UK 2025",
+      "meta_description": "The United States remains one of the world’s premier destinations for higher education, and for good reason. American universities consistently rank among the best globally, offering cutting-edge research opportunities, diverse academic programs, and a multicultural learning environment that prepares students for the global workforce.    What makes American education particularly attractive is its emphasis on practical, career-focused learning. Students don’t",
+      "status": "published",
+      "tags": [],
+      "category": "Student Life",
+      "canonical_url": "",
+      "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1759752597/blog_image_a2jalg.jpg",
+      "author": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "published_at": "2025-11-03T09:37:46.645Z",
+      "id": 11,
+      "language": "en",
+      "active": 0,
+      "created_at": "2025-11-03T09:37:47.138Z",
+      "updated_at": "2025-11-03T09:44:36.440Z"
+    },
+    {
+      "title": "The modern student faces a unique set of challenges.",
+      "slug": "the-modern-student-faces-a-unique-set-of-challenges",
+      "excerpt": "The modern student faces a unique set of challenges.",
+      "meta_title": "",
+      "meta_description": "",
+      "status": "published",
+      "tags": [],
+      "category": "Scholarships & Funding",
+      "canonical_url": "",
+      "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1759752597/blog_image_a2jalg.jpg",
+      "author": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "published_at": "2025-11-03T09:51:26.098Z",
+      "id": 12,
+      "language": "en",
+      "active": 1,
+      "created_at": "2025-11-03T09:51:26.273Z",
+      "updated_at": "2025-11-03T09:51:26.275Z"
+    }
+  ]
+}
