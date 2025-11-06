@@ -56,8 +56,8 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
         description: (post.meta_description ?? post.excerpt) || undefined,
         type: 'article',
         url: postUrl,
-        publishedTime: post.published_at ? (post.published_at as Date).toISOString() : undefined,
-        modifiedTime: post.updated_at ? (post.updated_at as Date).toISOString() : undefined,
+  publishedTime: post.published_at ? new Date(post.published_at).toISOString() : undefined,
+  modifiedTime: post.updated_at ? new Date(post.updated_at).toISOString() : undefined,
       },
       twitter: {
         card: 'summary_large_image',

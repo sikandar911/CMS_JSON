@@ -66,8 +66,8 @@ export class PostBlocksDB {
   static create(blockData: Omit<PostBlock, 'id' | 'created_at' | 'updated_at'>): PostBlock {
     const blocks = this.findAll()
     
-    // Generate UUID-like ID
-    const newId = blockData.id || `b${blockData.post_id}-${blockData.type}-${Date.now()}`
+  // Generate UUID-like ID
+  const newId = `b${blockData.post_id}-${blockData.type}-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
     
     const newBlock: PostBlock = {
       ...blockData,

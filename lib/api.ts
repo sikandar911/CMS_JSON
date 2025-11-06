@@ -14,7 +14,8 @@ import type { RoadmapSubmission } from './json-db/roadmap-submissions'
 export interface PostWithAuthor extends Post {
   author: {
     id: number
-    display_name: string
+    name: string
+    display_name?: string
   }
 }
 
@@ -37,9 +38,9 @@ export const postsApi = {
         const author = users.find(u => u.id === post.author_id)
         return {
           ...post,
-          author: author 
-            ? { id: author.id, display_name: author.display_name }
-            : post.author || { id: post.author_id || 0, display_name: 'Unknown' }
+    author: author
+    ? { id: author.id, name: (author as any).name || (author as any).display_name || 'Unknown', display_name: (author as any).display_name || (author as any).name || 'Unknown' }
+      : post.author ? { id: (post.author as any).id || post.author_id || 0, name: (post.author as any).name || (post.author as any).display_name || 'Unknown', display_name: (post.author as any).display_name || (post.author as any).name || 'Unknown' } : { id: post.author_id || 0, name: 'Unknown', display_name: 'Unknown' }
         }
       })
       .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
@@ -54,9 +55,9 @@ export const postsApi = {
 
     return {
       ...post,
-      author: author 
-        ? { id: author.id, display_name: author.display_name }
-        : post.author || { id: post.author_id || 0, display_name: 'Unknown' }
+  author: author
+    ? { id: author.id, name: (author as any).name || (author as any).display_name || 'Unknown', display_name: (author as any).display_name || (author as any).name || 'Unknown' }
+  : post.author ? { id: (post.author as any).id || post.author_id || 0, name: (post.author as any).name || (post.author as any).display_name || 'Unknown', display_name: (post.author as any).display_name || (post.author as any).name || 'Unknown' } : { id: post.author_id || 0, name: 'Unknown', display_name: 'Unknown' }
     }
   },
 
@@ -69,9 +70,9 @@ export const postsApi = {
 
     return {
       ...post,
-      author: author 
-        ? { id: author.id, display_name: author.display_name }
-        : post.author || { id: post.author_id || 0, display_name: 'Unknown' }
+      author: author
+        ? { id: author.id, name: (author as any).name || (author as any).display_name || 'Unknown', display_name: (author as any).display_name || (author as any).name || 'Unknown' }
+  : post.author ? { id: (post.author as any).id || post.author_id || 0, name: (post.author as any).name || (post.author as any).display_name || 'Unknown', display_name: (post.author as any).display_name || (post.author as any).name || 'Unknown' } : { id: post.author_id || 0, name: 'Unknown', display_name: 'Unknown' }
     }
   },
 
@@ -84,9 +85,9 @@ export const postsApi = {
         const author = users.find(u => u.id === post.author_id)
         return {
           ...post,
-          author: author 
-            ? { id: author.id, display_name: author.display_name }
-            : post.author || { id: post.author_id || 0, display_name: 'Unknown' }
+      author: author
+        ? { id: author.id, name: (author as any).name || (author as any).display_name || 'Unknown', display_name: (author as any).display_name || (author as any).name || 'Unknown' }
+            : post.author ? { id: (post.author as any).id || post.author_id || 0, name: (post.author as any).name || (post.author as any).display_name || 'Unknown', display_name: (post.author as any).display_name || (post.author as any).name || 'Unknown' } : { id: post.author_id || 0, name: 'Unknown', display_name: 'Unknown' }
         }
       })
       .sort((a, b) => {
@@ -104,9 +105,9 @@ export const postsApi = {
       const author = users.find(u => u.id === post.author_id)
       return {
         ...post,
-        author: author 
-          ? { id: author.id, display_name: author.display_name }
-          : post.author || { id: post.author_id || 0, display_name: 'Unknown' }
+      author: author
+        ? { id: author.id, name: (author as any).name || (author as any).display_name || 'Unknown', display_name: (author as any).display_name || (author as any).name || 'Unknown' }
+          : post.author ? { id: (post.author as any).id || post.author_id || 0, name: (post.author as any).name || (post.author as any).display_name || 'Unknown', display_name: (post.author as any).display_name || (post.author as any).name || 'Unknown' } : { id: post.author_id || 0, name: 'Unknown', display_name: 'Unknown' }
       }
     })
   },
@@ -117,23 +118,43 @@ export const postsApi = {
 
     return {
       ...newPost,
-      author: author 
-        ? { id: author.id, display_name: author.display_name }
-        : { id: newPost.author_id || 0, display_name: 'Unknown' }
+  author: author
+  ? { id: author.id, name: (author as any).name || (author as any).display_name || 'Unknown', display_name: (author as any).display_name || (author as any).name || 'Unknown' }
+  : newPost.author ? { id: (newPost.author as any).id || newPost.author_id || 0, name: (newPost.author as any).name || (newPost.author as any).display_name || 'Unknown', display_name: (newPost.author as any).display_name || (newPost.author as any).name || 'Unknown' } : { id: newPost.author_id || 0, name: 'Unknown', display_name: 'Unknown' }
     }
   },
 
-  update: async (id: number, data: any): Promise<PostWithAuthor | null> => {
+  update: async (id: number, data: any, userId?: number): Promise<PostWithAuthor | null> => {
+    // Capture existing post for revision snapshot
+    const existing = PostsDB.findById(id)
+
     const updated = PostsDB.update(id, data)
     if (!updated) return null
+
+    // If a userId is provided, record a revision snapshot
+    try {
+      if (userId) {
+        const nextRev = PostRevisionsDB.getNextRevisionNumber(id)
+        PostRevisionsDB.create({
+          post_id: id,
+          revision_number: nextRev,
+          author_id: userId,
+          data_snapshot: existing || {},
+          edited_at: new Date().toISOString()
+        })
+      }
+    } catch (err) {
+      // Don't fail the update if revisions recording fails — log and continue
+      console.error('[postsApi.update] failed to create revision:', err)
+    }
 
     const author = UsersDB.findById(updated.author_id || 0)
 
     return {
       ...updated,
-      author: author 
-        ? { id: author.id, display_name: author.display_name }
-        : updated.author || { id: updated.author_id || 0, display_name: 'Unknown' }
+      author: author
+        ? { id: author.id, name: (author as any).name || (author as any).display_name || 'Unknown', display_name: (author as any).display_name || (author as any).name || 'Unknown' }
+        : updated.author ? { id: (updated.author as any).id || updated.author_id || 0, name: (updated.author as any).name || (updated.author as any).display_name || 'Unknown', display_name: (updated.author as any).display_name || (updated.author as any).name || 'Unknown' } : { id: updated.author_id || 0, name: 'Unknown', display_name: 'Unknown' }
     }
   },
 
@@ -301,3 +322,8 @@ export const roadmapSubmissionsApi = {
     return RoadmapSubmissionsDB.delete(id)
   }
 }
+
+// Compatibility aliases for older import names
+// Some code and scripts still import `blocksApi` or `revisionsApi` — keep aliases so both work.
+export const blocksApi = postBlocksApi
+export const revisionsApi = postRevisionsApi
