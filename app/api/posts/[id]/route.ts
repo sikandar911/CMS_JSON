@@ -31,10 +31,15 @@ export async function GET(request: NextRequest, { params }: RouteContext) {
 }
 
 export async function PUT(request: NextRequest, { params }: RouteContext) {
+  console.log('[PUT /api/posts/:id] === NEW REQUEST ===')
+  
   try {
     // Verify authentication (accept token from Authorization header or cookie)
     const token = AuthService.extractTokenFromRequestHeaders(request.headers)
+    console.log('[PUT /api/posts/:id] Token present:', token ? 'YES (length=' + token.length + ')' : 'NO')
+    
     if (!token) {
+      console.log('[PUT /api/posts/:id] No token provided - returning 401')
       return NextResponse.json(
         { error: 'Authorization required' },
         { status: 401 }
@@ -42,12 +47,13 @@ export async function PUT(request: NextRequest, { params }: RouteContext) {
     }
 
     const payload = await AuthService.verifyToken(token)
-  const roleValue = payload && (payload.role || (Array.isArray(payload.roles) ? payload.roles[0] : undefined)) ? String(payload.role || (Array.isArray(payload.roles) ? payload.roles[0] : '')).toLowerCase() : undefined
+    console.log('[PUT /api/posts/:id] Payload:', payload ? JSON.stringify({ userId: payload.userId, email: payload.email, role: payload.role }) : 'NULL')
+    
+    const roleValue = payload && payload.role ? String(payload.role).toLowerCase() : undefined
     const user = payload ? { id: payload.userId, email: payload.email, role: roleValue } : null
 
     if (!user || (roleValue !== 'admin' && roleValue !== 'editor')) {
       console.log('[PUT /api/posts/:id] Authorization failed - role:', roleValue || 'NO PAYLOAD')
-      console.log('[PUT /api/posts/:id] Request headers:', Object.fromEntries((request.headers as any).entries()))
       return NextResponse.json(
         { error: 'Editor or admin access required' },
         { status: 403 }
@@ -55,15 +61,19 @@ export async function PUT(request: NextRequest, { params }: RouteContext) {
     }
 
     const postId = parseInt(params.id)
-    const body = await request.json()
+    console.log('[PUT /api/posts/:id] Attempting to update post id=', postId, 'for user id=', user.id)
 
-    // Debug logging to help trace 404s from the client
-    console.log('[PUT /api/posts/:id] postId=', postId)
-    console.log('[PUT /api/posts/:id] Authorization header=', request.headers.get('authorization'))
+    // Parse request body
+    let body
     try {
-      console.log('[PUT /api/posts/:id] incoming body keys=', Object.keys(body || {}))
-    } catch (e) {
-      console.log('[PUT /api/posts/:id] incoming body (non-json)')
+      body = await request.json()
+      console.log('[PUT /api/posts/:id] Request body parsed successfully, keys:', Object.keys(body || {}))
+    } catch (parseError) {
+      console.error('[PUT /api/posts/:id] Failed to parse request body:', parseError)
+      return NextResponse.json(
+        { error: 'Invalid request body', details: 'Failed to parse JSON' },
+        { status: 400 }
+      )
     }
 
     // Sanitize incoming payload: only allow writable scalar fields and map nested author -> author_id
@@ -98,12 +108,14 @@ export async function PUT(request: NextRequest, { params }: RouteContext) {
     }
 
     // Attempt update (pass user.id for revision tracking)
+    console.log('[PUT /api/posts/:id] Calling postsApi.update with updates:', Object.keys(updates))
     let updatedPost = null
     try {
       updatedPost = await postsApi.update(postId, updates, user.id)
-    } catch (err) {
-      console.error('[PUT /api/posts/:id] postsApi.update threw:', err)
-      throw err
+      console.log('[PUT /api/posts/:id] postsApi.update completed, result:', updatedPost ? 'SUCCESS' : 'NULL')
+    } catch (updateError) {
+      console.error('[PUT /api/posts/:id] postsApi.update threw:', updateError instanceof Error ? updateError.message : String(updateError))
+      throw updateError
     }
 
     if (!updatedPost) {
@@ -118,11 +130,15 @@ export async function PUT(request: NextRequest, { params }: RouteContext) {
       return NextResponse.json({ error: 'Failed to update post' }, { status: 500 })
     }
 
+    console.log('[PUT /api/posts/:id] Post updated successfully, id=', updatedPost.id)
     return NextResponse.json({ post: updatedPost })
   } catch (error) {
-    console.error('Error updating post:', error)
+    const errorMessage = error instanceof Error ? error.message : String(error)
+    const errorStack = error instanceof Error ? error.stack : 'N/A'
+    console.error('[PUT /api/posts/:id] Error updating post:', errorMessage)
+    console.error('[PUT /api/posts/:id] Stack trace:', errorStack)
     return NextResponse.json(
-      { error: 'Failed to update post' },
+      { error: 'Failed to update post', details: errorMessage },
       { status: 500 }
     )
   }

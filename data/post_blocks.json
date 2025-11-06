@@ -2241,7 +2241,7 @@
         ]
       },
       "settings": {
-        "theme": "splitted",
+        "theme": "shadow",
         "allowMultiple": false,
         "padding": {
           "top": 0,
@@ -2261,7 +2261,7 @@
       "order": 1,
       "id": "b13-accordion-1762416830620-b1ma5coo6",
       "created_at": "2025-11-06T08:13:50.620Z",
-      "updated_at": "2025-11-06T08:13:50.620Z"
+      "updated_at": "2025-11-06T08:20:23.891Z"
     }
   ]
 }

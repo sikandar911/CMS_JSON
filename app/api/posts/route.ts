@@ -38,9 +38,9 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
+  console.log('[POST /api/posts] === NEW REQUEST ===')
+  
   try {
-    console.log('[POST /api/posts] === NEW REQUEST ===')
-    
     // Verify authentication (accept token from Authorization header or cookie)
     const token = AuthService.extractTokenFromRequestHeaders(request.headers)
     console.log('[POST /api/posts] Token present:', token ? 'YES (length=' + token.length + ')' : 'NO')
@@ -77,14 +77,32 @@ export async function POST(request: NextRequest) {
 
     console.log('[POST /api/posts] Authorization successful for userId=', payload.userId)
 
-    const body = await request.json()
+    // Parse request body
+    let body
+    try {
+      body = await request.json()
+      console.log('[POST /api/posts] Request body parsed successfully, keys:', Object.keys(body || {}))
+    } catch (parseError) {
+      console.error('[POST /api/posts] Failed to parse request body:', parseError)
+      return NextResponse.json(
+        { error: 'Invalid request body', details: 'Failed to parse JSON' },
+        { status: 400 }
+      )
+    }
+
+    // Create post
+    console.log('[POST /api/posts] Attempting to create post with title:', body?.title)
     const newPost = await postsApi.create(body)
+    console.log('[POST /api/posts] Post created successfully, id=', newPost?.id)
 
     return NextResponse.json({ post: newPost }, { status: 201 })
   } catch (error) {
-    console.error('Error creating post:', error)
+    const errorMessage = error instanceof Error ? error.message : String(error)
+    const errorStack = error instanceof Error ? error.stack : 'N/A'
+    console.error('[POST /api/posts] Error creating post:', errorMessage)
+    console.error('[POST /api/posts] Stack trace:', errorStack)
     return NextResponse.json(
-      { error: 'Failed to create post' },
+      { error: 'Failed to create post', details: errorMessage },
       { status: 500 }
     )
   }

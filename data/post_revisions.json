@@ -87,6 +87,67 @@
       "edited_at": "2025-11-06T08:14:33.258Z",
       "id": 3,
       "created_at": "2025-11-06T08:14:33.259Z"
+    },
+    {
+      "post_id": 13,
+      "revision_number": 1,
+      "author_id": 1,
+      "data_snapshot": {
+        "title": "AI-Powered University Applications: Transforming Student Success",
+        "slug": "ai-powered-university-applications-transforming-student-success",
+        "excerpt": "Imagine having a personal education advisor who never sleeps, knows every university requirement worldwide, and learns from",
+        "meta_title": "",
+        "meta_description": "",
+        "status": "published",
+        "tags": [],
+        "category": "Partner Universities & Success Stories",
+        "canonical_url": "",
+        "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1757498948/pexels-olly-3807755_pfv2gp.jpg",
+        "author": {
+          "id": 1,
+          "name": "Admin"
+        },
+        "published_at": "2025-11-06T08:13:50.115Z",
+        "id": 13,
+        "language": "en",
+        "active": 1,
+        "created_at": "2025-11-06T08:13:50.198Z",
+        "updated_at": "2025-11-06T08:13:50.198Z"
+      },
+      "edited_at": "2025-11-06T08:20:15.664Z",
+      "id": 4,
+      "created_at": "2025-11-06T08:20:15.665Z"
+    },
+    {
+      "post_id": 13,
+      "revision_number": 2,
+      "author_id": 1,
+      "data_snapshot": {
+        "title": "AI-Powered University Applications: Transforming Student Success",
+        "slug": "ai-powered-university-applications-transforming-student-success",
+        "excerpt": "Imagine having a personal education advisor who never sleeps, knows every university requirement worldwide, and learns from",
+        "meta_title": "",
+        "meta_description": "",
+        "status": "published",
+        "tags": [],
+        "category": "Partner Universities & Success Stories",
+        "canonical_url": "",
+        "featured_image": "https://res.cloudinary.com/drgot7znf/image/upload/v1757498948/pexels-olly-3807755_pfv2gp.jpg",
+        "author": {
+          "id": 1,
+          "name": "Admin"
+        },
+        "published_at": "2025-11-06T08:13:50.115Z",
+        "id": 13,
+        "language": "en",
+        "active": 1,
+        "created_at": "2025-11-06T08:13:50.198Z",
+        "updated_at": "2025-11-06T08:20:15.662Z",
+        "author_id": 1
+      },
+      "edited_at": "2025-11-06T08:20:23.866Z",
+      "id": 5,
+      "created_at": "2025-11-06T08:20:23.867Z"
     }
   ]
 }
