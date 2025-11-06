@@ -194,7 +194,7 @@ export default function ReadingNow({ initialPosts }: { initialPosts?: any }) {
 
               <div className="p-4 flex-1 flex flex-col">
                 <h3 className="text-base font-semibold text-gray-900 mb-2">
-                  {post.title}
+                  <a href={`/blog/${post.slug}`}>{post.title}</a>
                 </h3>
 
                 <p
