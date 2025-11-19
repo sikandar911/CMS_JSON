@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
 import Link from "next/link";
 import classNames from "classnames";
 
@@ -18,7 +18,8 @@ interface MenuItem {
 interface MobileMenuProps {
   menuData: MenuItem[];
   openMenu: string;
-  setOpenMenu: (menu: string | undefined) => void;
+  // accept the React state setter to match Header's setOpenMenu
+  setOpenMenu: Dispatch<SetStateAction<string>>;
 }
 
 const buttonData = {
@@ -49,7 +50,7 @@ export default function MobileMenu({ menuData, openMenu, setOpenMenu }: MobileMe
 
   const handleCloseMenu = () => {
     setActiveMenu(undefined);
-    setOpenMenu(undefined);
+    setOpenMenu("");
   };
 
   return (
