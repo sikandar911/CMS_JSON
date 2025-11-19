@@ -7,13 +7,39 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: {
-          50: '#eff6ff',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
+      container: {
+        padding: {
+          DEFAULT: '1rem',
         },
+      },
+      colors: {
+        'primary': '#045D5E',
+        'primary-br': '#1C3F3A',
+        'primary-800': '#367D73',
+        'primary-600': '#689E9E',
+        'primary-400': '#9BBEBF',
+        'primary-200': '#CDDFDF',
+        'primary-100': '#e6efef',
+        'secondary': '#FC7300',
+        'secondary-800': '#FD8F33',
+        'secondary-600': '#FDAB66',
+        'secondary-400': '#FEC799',
+        'secondary-200': '#FEE3CC',
+        'default': '#252525',
+        'default-800': '#515151',
+        'default-600': '#7C7C7C',
+        'default-400': '#A8A8A8',
+        'default-200': '#D3D3D3',
+        'default-alt': '#101010',
+        'natural': '#E9E9E9',
+        'natural-800': '#E5EAF4',
+        'natural-600': '#ECEFF7',
+        'natural-400': '#F2F5F9',
+        'natural-200': '#F9FAFC',
+        'natural-alt': '#F9F3EF',
+        'warning': '#F95555',
+        'success': '#2FC86F',
+        'link-blue': '#0025E7',
         gray: {
           50: '#f9fafb',
           100: '#f3f4f6',

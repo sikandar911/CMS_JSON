@@ -1,4 +1,3 @@
-import Navigation from '@/components/Navigation'
 import Link from 'next/link'
 import ReadingNow from '@/components/ReadingNow'
 import FollowJourney from '@/components/FollowJourney'
@@ -11,10 +10,8 @@ export default async function HomePage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navigation />
-
-      {/* Full-screen Hero */}
-      <section className="relative h-screen w-full bg-gray-800 overflow-hidden">
+      {/* Full-screen Hero - moved up under fixed header */}
+      <section className="relative h-screen w-full bg-gray-800 overflow-hidden -mt-20">
   {/* Background image (blurred) */}
   <div className="absolute inset-0 z-0">
           <img
@@ -29,7 +26,7 @@ export default async function HomePage() {
           <div className="w-full grid grid-cols-12 gap-6 items-center">
             {/* Left Hero (Main content) */}
             <div className="col-span-12 block lg:hidden pt-10 mt-10" />
-            <div className="col-span-12 lg:col-span-7 xl:col-span-7 pb-8 lg:pb-0">
+            <div className="col-span-12 lg:col-span-7 xl:col-span-7 pb-8 lg:pb-0 pt-20">
               <div className="max-w-2xl text-white ">
                 <div className="inline-block mb-4">
                   <span className="inline-flex items-center px-3 py-1 rounded-full bg-[#EF623C] text-white text-sm font-medium">

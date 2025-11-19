@@ -4,7 +4,6 @@ import { AuthService } from '@/lib/auth'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import BlockRenderer from '@/components/BlockRenderer'
-import Navigation from '@/components/Navigation'
 import FeaturedCourses from '@/components/FeaturedCourses'
 import { cookies, headers } from 'next/headers'
 import { getCategories } from '@/lib/categories'
@@ -162,7 +161,6 @@ export default async function BlogPostPage({ params, searchParams }: PageProps) 
         />
 
         <div className="min-h-screen bg-white">
-          <Navigation />
           <article className="relative">
             {/* Preview Banner */}
             {isPreview && (
@@ -182,7 +180,7 @@ export default async function BlogPostPage({ params, searchParams }: PageProps) 
 
           {/* Hero Section with Featured Image Background */}
             <header
-            className="blog-header"
+            className="blog-header -mt-20"
             style={{
               backgroundImage: `url(${post.featured_image || 'https://res.cloudinary.com/drgot7znf/image/upload/v1759752597/blog_image_a2jalg.jpg'})`
             }}
@@ -447,7 +445,7 @@ export default async function BlogPostPage({ params, searchParams }: PageProps) 
 
               .breadcrumb {
               margin-bottom: 1rem;
-              padding-top: 2rem; /* mobile spacing to separate from navbar */
+              padding-top: 3rem; /* mobile spacing to separate from navbar */
               @media (min-width: 640px) { padding-top: 0; }
               }
 

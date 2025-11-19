@@ -51,7 +51,8 @@ html {
 
 /* Custom focus styles */
 .focus-visible:focus {
-  outline: 2px solid theme('colors.primary.500');
+  /* Use the primary brand color for focus outlines */
+  outline: 2px solid #045D5E;
   outline-offset: 2px;
 }
 
@@ -65,7 +66,12 @@ html {
 }
 
 .blog-content blockquote {
-  @apply border-l-4 border-primary-500 bg-gray-50 p-4 rounded-r-lg;
+  /* Left accent border + readable background for blockquotes */
+  border-left: 4px solid #045D5E;
+  background-color: #f9fafb; /* bg-gray-50 */
+  padding: 1rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 /* Admin editor styles */
@@ -78,7 +84,10 @@ html {
 }
 
 .editor-block.dragging {
-  @apply border-primary-500 bg-primary-50 shadow-lg;
+  /* active dragging state: brand colored border and light primary background */
+  border-color: #045D5E;
+  background-color: #e6efef; /* primary-100 */
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
 }
 
 /* Accordion styles */
@@ -104,7 +113,8 @@ html {
 }
 
 .tab-button.active {
-  @apply text-primary-600 border-primary-500;
+  color: #689E9E; /* primary-600 */
+  border-bottom: 2px solid #045D5E; /* primary brand */
 }
 
 .tab-panel {
@@ -126,7 +136,14 @@ html {
 }
 
 .btn-primary {
-  @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  background-color: #689E9E; /* primary-600 */
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: #367D73; /* primary-800 */
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 4px rgba(4,93,94,0.15);
 }
 
 .btn-secondary {
@@ -206,3 +223,152 @@ html {
 
 /* Make sure horizontal scrolling snaps nicely on touch devices */
 .blog-slider { -webkit-overflow-scrolling: touch; }
+
+/* Header and Footer styles from Uapp Main site */
+.has-scroll {
+  box-shadow: 0 5px 5px 0 rgba(31, 42, 56, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.menu-item:hover::after,
+.active-menu::after {
+  content: "";
+  height: 2px;
+  background: #fec799;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.active-menu-button {
+  color: #fec799;
+  border-color: #fec799;
+}
+
+.mobile-menu.show-menu {
+  transform: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(4, 93, 94, 0.9);
+  transform: translateX(-100%);
+  transition: transform 0.2s linear;
+}
+
+.active-menu {
+  color: #fec799;
+}
+
+.open-menu {
+  display: block !important;
+}
+
+.social-facebook:hover {
+  color: #316ff6;
+}
+
+.social-twitter:hover {
+  color: #1da1f2;
+}
+
+.social-linkedin:hover {
+  color: #0077b5;
+}
+
+.social-instagram:hover {
+  color: #ee2a7b;
+}
+
+/* Header scrolled background */
+.header-scrolled {
+  background-color: rgb(4 93 94);
+  transition: background-color 200ms ease-in-out;
+}
+
+/* translucent popup background used by header dropdowns */
+.popup-bg {
+  background-color: rgba(255,255,255,0.35);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+/* Uapp scrollbar custom styles */
+.uapp-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.uapp-scroll::-webkit-scrollbar-track {
+  background: rgba(37, 37, 37, 0.2);
+  border-radius: 8px;
+}
+
+.uapp-scroll::-webkit-scrollbar-thumb {
+  background: #045d5e;
+  border-radius: 8px;
+}
+
+/* Arrow animations */
+.arrow-up {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.arrow-down {
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+
+/* Utility text classes from Uapp */
+.uapp-text-xl {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 1024px) {
+  .uapp-text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+}
+
+.uapp-text-lg {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .uapp-text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.uapp-text-default {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .uapp-text-default {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.uapp-text-md {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.uapp-text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
